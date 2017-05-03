@@ -18,20 +18,16 @@
     Left nav menu
 </div>
 
-<div id="content" fragment="content">
-    <h3>Connect to VKontakte</h3>
+<div id="content" layout:fragment="content">
+    <h3>Your LinkedIn Connections</h3>
 
-    <form action="@{/connect/vkontakte}" method="POST">
-        <input type="hidden" name="_csrf" value="${_csrf.token}" />
-        <input type="hidden" name="scope" value="notify,friends,photos,audio,video,notes,pages,offline,email" />
-        <div class="formInfo">
-            <p>
-                You aren't connected to VKontakte yet. Click the button to connect Spring Social Showcase with your VKontakte account.
-            </p>
-        </div>
-        <p><button type="submit">Connect with VKontakte</button></p>
-    </form>
+    <p>First degree count: <span text="${firstDegreeCount}">first degree count</span></p>
+    <p>Second degree count: <span text="${secondDegreeCount}">second degree count</span></p>
+
+    <ul class="friends">
+        <li each="connection : ${connections}">
+            <img src="${connection.profilePictureUrl}" align="middle"/><span text="${connection.firstName}"></span> <span th:text="${connection.lastName}"></span></li>
+    </ul>
 </div>
 </body>
 </html>
-

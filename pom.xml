@@ -67,15 +67,15 @@
             <dependency>
                 <groupId>org.springframework.social</groupId>
                 <artifactId>spring-social-vkontakte</artifactId>
-                <version>1.1.0.BUILD-SNAPSHOT</version>
+                <version>2.0.0.BUILD-SNAPSHOT</version>
             </dependency>
 
         <!-- https://mvnrepository.com/artifact/ru.shadam.spring-boot/social-vkontakte-spring-boot-starter -->
-        <dependency>
+       <!-- <dependency>
             <groupId>ru.shadam.spring-boot</groupId>
             <artifactId>social-vkontakte-spring-boot-starter</artifactId>
             <version>0.1</version>
-        </dependency>
+        </dependency>-->
         <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-freemarker -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

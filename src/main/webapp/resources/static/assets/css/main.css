@@ -2934,7 +2934,8 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: url('../../images/cropped-cropped-globalconnections2010.png');
+		/* image source https://www.flickr.com/photos/paul_irish/2379958609 */
+		background-image: url('../../images/2379958609_a644d953f1.jpg');
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;

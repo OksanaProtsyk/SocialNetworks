@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="header">
-    <h1><a href="@{/}">Spring Social Showcase</a></h1>
+    <h1><a th:href="@{/}">Spring Social Showcase</a></h1>
 </div>
 
 <div id="leftNav">
@@ -19,21 +19,28 @@
 </div>
 
 <div id="content" layout:fragment="content">
-    <h3>Connected to VKontakte</h3>
+    <h3>Your LinkedIn Profile</h3>
 
-    <form id="disconnect" method="post">
+    <p>Hello, <span th:text="${profile.firstName}">first name</span>!</p>
+    <img th:src="${profile.profilePictureUrl}"/>
+    <dl>
+        <dt>LinkedIn ID:</dt>
+        <dd><a th:href="${profile.publicProfileUrl}" target="_blank" th:text="${profile.id}">profile id</a></dd>
+        <dt>Email Address:</dt>
+        <dd th:text="${profile.emailAddress}"></dd>
+        <dt>Headline:</dt>
+        <dd th:text="${profile.headline}"></dd>
+        <dt>Industry:</dt>
+        <dd th:text="${profile.industry}"></dd>
+        <dt>Summary:</dt>
+        <dd th:text="${profile.summary}"></dd>
+    </dl>
+
+    <form id="disconnect" th:action="@{/connect/linkedin}" method="post">
         <input type="hidden" name="_csrf" th:value="${_csrf.token}" />
-        <div class="formInfo">
-            <p>The Spring Social Showcase sample application is already connected to your VKontakte account.
-                Click the button if you wish to disconnect</p>
-        </div>
-
-        <button type="submit">Disconnect</button>
+        <button type="submit">Disconnect from LinkedIn</button>
         <input type="hidden" name="_method" value="delete" />
     </form>
-
-    <p><a href="@{/vkontakte}">View your VKontakte profile</a></p>
 </div>
 </body>
 </html>
-
