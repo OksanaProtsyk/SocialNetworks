@@ -1,6 +1,11 @@
 package com.ukma.protsyk.na.gephi;
 
 import com.itextpdf.text.PageSize;
+import org.gephi.graph.api.Graph;
+import org.gephi.graph.api.GraphController;
+import org.gephi.graph.api.GraphModel;
+import org.gephi.graph.api.Node;
+import org.gephi.graph.api.types.TimestampIntegerMap;
 import org.gephi.io.exporter.api.ExportController;
 import org.gephi.io.exporter.preview.PDFExporter;
 import org.gephi.io.exporter.spi.CharacterExporter;
@@ -15,6 +20,7 @@ import org.gephi.project.api.ProjectController;
 import org.gephi.project.api.Workspace;
 import org.openide.util.Lookup;
 
+import java.awt.*;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
@@ -54,6 +60,14 @@ public class ExportImport {
 
         //Append imported data to GraphAPI
         importController.process(container, new DefaultProcessor(), workspace);
+
+        GraphModel graphModel = Lookup.getDefault().lookup(GraphController.class).getGraphModel();
+        Graph graph = graphModel.getGraph();
+        for (Node n : graph.getNodes()) {
+            n.setColor(Color.WHITE);
+        }
+
+
 
         //Export full graph
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);

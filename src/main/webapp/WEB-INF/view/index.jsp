@@ -8,7 +8,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
     <title>User Similarity in SN</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="/resources/static/assets/css/main.css" />
+    <link rel="stylesheet" href="resources/static/assets/css/main.css" />
 </head>
 <body>
 
@@ -27,7 +27,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
 
 <!-- Banner -->
 <section id="banner">
-    <h1>User Similartity in Social Networks</h1>
+    <h1>User Similarity in Social Networks</h1>
 </section>
 
 <!-- One -->
@@ -35,10 +35,10 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
     <div class="inner">
         <div class="flex flex-3">
             <article>
-                <header>
-                    <h3>Facebook</h3>
+                <header >
+                    <h3 >Facebook</h3>
                 </header>
-                <p></p>
+                <p>Some text to be add </p>
                 <footer>
                     <a href="facebook" class="button special">Analyze</a>
                 </footer>
@@ -47,7 +47,7 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
                 <header>
                     <h3>VKontakte</h3>
                 </header>
-                <p></p>
+                <p>Some text to be add </p>
                 <footer>
                     <a href="vkontakte" class="button special">Analyze</a>
                 </footer>
@@ -56,6 +56,8 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
                 <header>
                     <h3>LinkedIn</h3>
                 </header>
+                <p>Some text to be add </p>
+
                 <footer>
                     <a href="linkedin" class="button special">Analyze</a>
                 </footer>

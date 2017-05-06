@@ -8,15 +8,15 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>NODES</title>
+    <title>Vk Graph</title>
 </head>
-<body>
-Something is not working
+<body style="background-color:rgb(0,0,0);">
 <style type="text/css">
     #sigma-container {
         max-width: 100%;
         height: 100%;
         margin: auto;
+        background-color: rgb(0, 0, 0);
     }
 </style>
 <!-- [...] -->
@@ -26,7 +26,6 @@ Something is not working
     <div class="box" id="sigma-tuto-step2"></div>
 </div>
 <!-- [...] -->
-</body>
 <script src="/resources/static/assets/js/sigma.js"></script>
 <script src="/resources/static/assets/js/plugins/sigma.parsers.json.min.js"></script>
 <script src="/resources/static/assets/js/plugins/sigma.parsers.gexf.min.js"></script>
@@ -108,4 +107,6 @@ Something is not working
             }
     );
 </script>
+</body>
+
 </html>

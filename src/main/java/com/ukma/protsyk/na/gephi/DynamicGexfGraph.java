@@ -29,6 +29,8 @@ import it.uniroma1.dis.wsngroup.gexf4j.core.impl.GexfImpl;
 import it.uniroma1.dis.wsngroup.gexf4j.core.impl.SpellImpl;
 import it.uniroma1.dis.wsngroup.gexf4j.core.impl.StaxGraphWriter;
 import it.uniroma1.dis.wsngroup.gexf4j.core.impl.data.AttributeListImpl;
+import it.uniroma1.dis.wsngroup.gexf4j.core.impl.viz.ColorImpl;
+import it.uniroma1.dis.wsngroup.gexf4j.core.viz.*;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -254,18 +256,18 @@ public class DynamicGexfGraph {
         }
 
 
-            for (Node fr : graph.getNodes()) {
-                    List<String> conContacts = users2.get(fr.getId());
-                    if (conContacts != null) {
-                        for (String au : conContacts) {
-System.out.println("Spring: "+au);
-                        Node n = getNodeByID(graph,au);
-                        if((n!=null)&&(!fr.equals(n))){
-                            n.connectTo(fr);
-                            }
-
+        for (Node fr : graph.getNodes()) {
+            List<String> conContacts = users2.get(fr.getId());
+            if (conContacts != null) {
+                for (String au : conContacts) {
+                    System.out.println("Spring: " + au);
+                    Node n = getNodeByID(graph, au);
+                    if ((n != null) && (!fr.equals(n))) {
+                        n.connectTo(fr);
                     }
+
                 }
+            }
 
         }
 
@@ -296,9 +298,9 @@ System.out.println("Spring: "+au);
         }
     }
 
-    public static Node getNodeByID(Graph graph, String id){
-        for (Node n:graph.getNodes()){
-            if (n.getId().equals(id)){
+    public static Node getNodeByID(Graph graph, String id) {
+        for (Node n : graph.getNodes()) {
+            if (n.getId().equals(id)) {
                 return n;
             }
         }
