@@ -29,6 +29,8 @@ Something is not working
 </body>
 <script src="/resources/static/assets/js/sigma.js"></script>
 <script src="/resources/static/assets/js/plugins/sigma.parsers.json.min.js"></script>
+<script src="/resources/static/assets/js/plugins/sigma.parsers.gexf.min.js"></script>
+
 <script>
     // Add a method to the graph model that returns an
     // object with every neighbors of a node inside:
@@ -43,8 +45,8 @@ Something is not working
         return neighbors;
     });
 
-    sigma.parsers.json(
-            'resources/static/assets/data/les-miserables.json',
+    sigma.parsers.gexf(
+            '/resources/static/assets/data/graph_out.gexf',
             {
                 container: 'sigma-container'
             },

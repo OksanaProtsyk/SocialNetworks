@@ -83,6 +83,25 @@
             <version>1.1.7.RELEASE</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework.social/spring-social-linkedin -->
+        <dependency>
+            <groupId>org.springframework.social</groupId>
+            <artifactId>spring-social-linkedin</artifactId>
+            <version>1.0.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.gephi</groupId>
+            <artifactId>gephi-toolkit</artifactId>
+            <version>0.9.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/it.uniroma1.dis.wsngroup.gexf4j/gexf4j -->
+        <dependency>
+            <groupId>it.uniroma1.dis.wsngroup.gexf4j</groupId>
+            <artifactId>gexf4j</artifactId>
+            <version>0.4.3-BETA</version>
+        </dependency>
+
     </dependencies>
 <repositories>
     <!-- Repositories to allow snapshot and milestone BOM imports during

@@ -27,7 +27,7 @@
     <table class="table table-hover">
         <c:forEach items="${friends}" var="friend">
             <tr>
-                <td> <img src="${friend.photo50} + '/picture'" align="middle"/> </td>
+                <td> <img src="${friend.photo50}" align="middle"/> </td>
                 <td><span text="${friend.firstName}">${friend.firstName}</span></td>
             </tr>
         </c:forEach>

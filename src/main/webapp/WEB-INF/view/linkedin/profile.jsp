@@ -11,29 +11,27 @@
 </head>
 <body>
 <div id="header">
-    <h1><a th:href="@{/}">Spring Social Showcase</a></h1>
 </div>
 
 <div id="leftNav">
-    Left nav menu
 </div>
 
 <div id="content" layout:fragment="content">
     <h3>Your LinkedIn Profile</h3>
 
-    <p>Hello, <span th:text="${profile.firstName}">first name</span>!</p>
-    <img th:src="${profile.profilePictureUrl}"/>
+    <p>Hello, <span text="${profile.firstName}">first name</span>!</p>
+    <img src="${profile.profilePictureUrl}"/>
     <dl>
         <dt>LinkedIn ID:</dt>
-        <dd><a th:href="${profile.publicProfileUrl}" target="_blank" th:text="${profile.id}">profile id</a></dd>
+        <dd><a href="${profile.publicProfileUrl}" target="_blank" text="${profile.id}">profile id</a></dd>
         <dt>Email Address:</dt>
-        <dd th:text="${profile.emailAddress}"></dd>
+        <dd text="${profile.emailAddress}"></dd>
         <dt>Headline:</dt>
-        <dd th:text="${profile.headline}"></dd>
+        <dd text="${profile.headline}"></dd>
         <dt>Industry:</dt>
-        <dd th:text="${profile.industry}"></dd>
+        <dd text="${profile.industry}"></dd>
         <dt>Summary:</dt>
-        <dd th:text="${profile.summary}"></dd>
+        <dd text="${profile.summary}"></dd>
     </dl>
 
     <form id="disconnect" th:action="@{/connect/linkedin}" method="post">

@@ -38,7 +38,6 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
                 <header>
                     <h3>Facebook</h3>
                 </header>
-                <img src="/resources/static/images/fb_icon_325x325.png" sizes="50%" />
                 <p></p>
                 <footer>
                     <a href="facebook" class="button special">Analyze</a>
@@ -55,11 +54,10 @@ Released for free under the Creative Commons Attribution 3.0 license (templated.
             </article>
             <article>
                 <header>
-                    <h3>Libero purus magna sapien<br /> sed ullamcorper</h3>
+                    <h3>LinkedIn</h3>
                 </header>
-                <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>
                 <footer>
-                    <a href="#" class="button special">More</a>
+                    <a href="linkedin" class="button special">Analyze</a>
                 </footer>
             </article>
         </div>

@@ -1,5 +1,6 @@
 package com.ukma.protsyk.na.controller;
 
+import com.ukma.protsyk.na.gephi.WithAutoLayout;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -19,6 +20,9 @@ public class NodeController {
     @RequestMapping(value="/nodes", method= RequestMethod.GET)
     public String node(Model model) {
 
+
+        WithAutoLayout autoLayout = new WithAutoLayout();
+       autoLayout.script();
         return "nodes";
     }
 }

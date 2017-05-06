@@ -1,8 +1,3 @@
-package com.ukma.protsyk.na.controller;
-
-/**
- * Created by okpr0814 on 5/2/2017.
- */
 /*
  * Copyright 2014 the original author or authors.
  *
@@ -18,33 +13,34 @@ package com.ukma.protsyk.na.controller;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+package com.ukma.protsyk.na.controller.linkedin;
+
+import java.security.Principal;
 
 import javax.inject.Inject;
 
-import org.springframework.social.facebook.api.Facebook;
+import org.springframework.social.connect.Connection;
+import org.springframework.social.connect.ConnectionRepository;
+import org.springframework.social.linkedin.api.LinkedIn;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class FacebookFriendsController {
+public class LinkedInProfileController {
 
-    private final Facebook facebook;
-
-    @Inject
-    public FacebookFriendsController(Facebook facebook) {
-
-        this.facebook = facebook;
-    }
-
-    @RequestMapping(value = "/facebook/friends", method = RequestMethod.GET)
-    public String showFeed(Model model) {
-        model.addAttribute("friends", facebook.friendOperations().getFriendProfiles());
-        model.addAttribute("lengths", facebook.friendOperations().getFriendProfiles().size());
-
-        return "facebook/friends";
-    }
-
+	@Inject
+	private ConnectionRepository connectionRepository;
+	
+	@RequestMapping(value="/linkedin", method=RequestMethod.GET)
+	public String home(Principal currentUser, Model model) {
+		Connection<LinkedIn> connection = connectionRepository.findPrimaryConnection(LinkedIn.class);
+		if (connection == null) {
+			return "redirect:/connect/linkedin";
+		}
+		model.addAttribute("profile", connection.getApi().profileOperations().getUserProfileFull());
+		return "linkedin/profile";
+	}
+	
 }
-

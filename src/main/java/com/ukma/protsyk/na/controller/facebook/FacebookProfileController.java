@@ -1,4 +1,4 @@
-package com.ukma.protsyk.na.controller;
+package com.ukma.protsyk.na.controller.facebook;
 import javax.inject.Inject;
 
 import org.springframework.social.connect.Connection;

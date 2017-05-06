@@ -1,4 +1,4 @@
-package com.ukma.protsyk.na.controller;
+package com.ukma.protsyk.na.controller.facebook;
 
 import org.springframework.social.connect.Connection;
 import org.springframework.social.connect.ConnectionRepository;
