@@ -1,0 +1,2767 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2017-05-08">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="2" title="frog" type="boolean">
+        <default>true</default>
+      </attribute>
+      <attribute id="0" title="url" type="string"/>
+      <attribute id="1" title="indegree" type="float"/>
+    </attributes>
+    <nodes>
+      <node id="4564170" label="Oshurko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="228.00572" y="176.63548"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="5335683" label="Kovriga">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-274.4254" y="340.13724"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="7868452" label="Sherman">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-96.55517" y="372.51205"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="7961682" label="Shetsko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="294.87363" y="334.2283"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="10038307" label="Sokolova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="352.63138" y="74.28111"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="10272539" label="Kovalevsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-129.10686" y="45.163498"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="11166319" label="Girilishena">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-282.92072" y="226.77293"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="12139010" label="Tsalyn">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-279.47208" y="-399.93713"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="12234366" label="Davidenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-24.71523" y="338.4559"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="12791434" label="Karpa">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-178.55763" y="-73.731674"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="13474490" label="Glyus">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-344.42816" y="-97.55623"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="13589989" label="Protsyk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="33.721416" y="-110.82918"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="14032977" label="Nikitin">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="333.68332" y="163.50426"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="14714625" label="Shpuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="365.85263" y="-178.41298"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="15574353" label="Repetska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-391.2493" y="-234.23177"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="16696302" label="Yarmosh">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="306.5049" y="401.7466"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="17014525" label="Dotsenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="127.25407" y="293.37607"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="17134403" label="Gorban">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-164.82832" y="-294.88336"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="17278842" label="Sokolova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-118.19079" y="225.08867"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="17283731" label="Burlakov">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-352.40195" y="-345.29813"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="17379577" label="Kozak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="450.095" y="363.92813"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="18574195" label="Duchenchuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="336.012" y="25.126389"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="18927057" label="Kaspyar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="58.96214" y="374.20328"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="19953567" label="Nesterchuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-250.46736" y="-382.28665"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="20271917" label="Kaplunsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="359.73972" y="-339.18625"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="20295348" label="Kulchitska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-473.27142" y="216.94548"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="20649650" label="Dzyuba">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-417.01718" y="459.51505"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="20817433" label="Vasilenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-159.84676" y="463.10226"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="21255490" label="Bakurov">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="304.38168" y="-328.13266"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="21291707" label="Tsymbalyuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-278.21786" y="-168.4655"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="21534739" label="Kulgan">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="398.2783" y="-325.12183"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="21869003" label="Burich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-51.36739" y="495.94962"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="21912806" label="Shevchuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-118.78588" y="62.889633"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="22393916" label="Orlova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="359.44485" y="-28.752914"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="23108668" label="Tatusko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="255.15813" y="38.04869"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="23110804" label="Kulak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-353.84332" y="80.85527"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="23230277" label="Kolos">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-351.45828" y="-44.2603"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="24208753" label="Gornyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="118.00468" y="-25.812698"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="24442242" label="Andrunevich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-477.04678" y="352.64505"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="24695554" label="Shulgan">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-328.5629" y="-368.25436"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="24818639" label="Demtsio">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-35.679096" y="-362.35864"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="25056835" label="Chuba">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="215.62444" y="-461.42996"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="25705268" label="Florenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-390.35873" y="509.52585"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="25907565" label="Magerovsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="101.20603" y="-18.862106"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="26390916" label="Kratasyuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="73.78422" y="80.60802"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="27137012" label="Galich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-320.98828" y="-271.51053"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="27733605" label="Soroka">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="335.63455" y="-368.51065"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="28697570" label="Baranetska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-24.14968" y="-304.73514"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="29312353" label="Latsik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-81.19442" y="-100.10579"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="29315192" label="Lazor">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-383.9435" y="-447.49695"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="29357583" label="Dzhidzhora">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-140.61342" y="-184.79698"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="29915671" label="Lysko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-459.65866" y="151.46892"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="30163937" label="Bed">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="391.6628" y="-369.62106"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="30210390" label="Gutey">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-222.40822" y="56.436142"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="30448650" label="Latsik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="2.4741619" y="474.26736"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="30666289" label="Semenyuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-489.38397" y="444.26968"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="31109372" label="Dashko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="5.8528237" y="449.78738"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="31335433" label="Verbovetska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-56.56545" y="121.81468"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="31810758" label="Popovich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="71.81028" y="-462.67773"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="31819365" label="Migalik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="25.566202" y="436.51254"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="31986879" label="Kuzmyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="206.61662" y="-272.34256"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="31988992" label="Zhuravel">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-82.13775" y="411.33078"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="32105511" label="Oliynik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-473.3549" y="5.1000824"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="32649429" label="Latsik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="194.79167" y="-477.99625"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="33280502" label="Korol">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-206.17012" y="28.956894"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="33811741" label="Latsik-Sidor">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="169.68199" y="152.74944"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="34361118" label="Sidor">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="88.010475" y="-379.6666"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="36475093" label="Negry">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="402.27426" y="-83.96117"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="36844301" label="Kuzhelnaya">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="179.91594" y="451.25797"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="36888743" label="Khudik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="402.04794" y="-297.34024"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="37015711" label="Pauk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="138.2647" y="-345.57693"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="37823199" label="Kraynik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-223.87193" y="-459.76993"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="38034151" label="Guchema-Buchkovets">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="455.43613" y="424.3749"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="38160092" label="Propoy">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-412.81625" y="81.48045"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="38406164" label="Pitlik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-491.60657" y="64.77208"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="38589528" label="Abdullayeva">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="484.5828" y="-181.96007"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="38901348" label="Lyubchinsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="485.01572" y="351.37167"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="40280118" label="Demyanets">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="251.16582" y="-78.87749"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="40321662" label="Stepanyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="0.7236735" y="-473.30698"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="40451362" label="Kusen">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-231.64375" y="-52.574265"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="40830950" label="Rey">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-493.74078" y="-280.15506"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="42358040" label="Konup">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="43.924053" y="-483.28214"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="43483090" label="Tokmina">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="244.70592" y="93.79411"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="44182321" label="Berezhnyakova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-130.42784" y="467.00296"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="44846310" label="Malykh">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-45.68581" y="-437.6102"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="47537400" label="Lunin">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-120.383934" y="-76.18144"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="48581388" label="Tsimura">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-266.578" y="490.7502"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="48932001" label="Rusnak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="267.3798" y="182.13261"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="49420053" label="Kurlyakovska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="484.7369" y="395.1534"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="49423347" label="Popel">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="182.53099" y="292.4738"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="49551087" label="Tochitsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="138.47398" y="292.36624"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="50197475" label="Savka">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-119.568596" y="-232.661"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="50720062" label="Latsik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="417.3184" y="13.383469"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="51559239" label="Gergel">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="23.679544" y="-120.40962"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="51644139" label="Nizovy">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="250.91063" y="492.8372"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="51654379" label="Oleynik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="146.37383" y="-388.5354"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="51757089" label="Butsa">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="73.525734" y="-227.12242"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="51846927" label="Voznyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="183.22649" y="430.98343"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="52536586" label="Protsik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="145.84795" y="219.11314"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="52760497" label="Pikhota">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="138.51042" y="-278.032"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="53432063" label="Ustritska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-269.78445" y="236.23967"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="53445538" label="Skirka">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="423.92117" y="-125.47713"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="54261462" label="Skirka">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="418.4396" y="-407.7261"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="55038457" label="Kret">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="129.79002" y="-245.22917"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="57758131" label="Mrichko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="162.27562" y="312.8497"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="58532047" label="Pavlishin">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-489.31656" y="-484.21738"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="58842335" label="Malyuta">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-411.1463" y="-9.17952"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="59399216" label="Gliv'yak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="264.27817" y="486.06058"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="61031131" label="Yatsulyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-3.1491292" y="271.45346"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="61409374" label="Ionov">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-238.50002" y="177.59862"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="61751037" label="Mrichko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="23.912394" y="219.78905"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="61786781" label="Zabolotna">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="246.26817" y="292.45523"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="61879707" label="Sanin">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="351.81052" y="254.27745"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="62576194" label="Slivka">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="164.78838" y="-25.058731"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="65965286" label="Pikho">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-26.949972" y="339.59427"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="66035538" label="Gonchar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="207.18712" y="455.93564"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="66220000" label="Svavolya">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="481.11154" y="171.57658"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="66783691" label="Gubitska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="348.38474" y="-333.4902"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="67120553" label="Timoshenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-433.75348" y="158.50755"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="68074613" label="Britska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="160.45372" y="359.95255"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="69592328" label="Ovsyannik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="399.71603" y="105.52019"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="71204441" label="Nestorivska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-64.68929" y="-225.54668"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="71475808" label="Lazor">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-128.4077" y="-357.32315"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="74271696" label="Pauk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-295.556" y="-106.88588"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="78802792" label="Krizhanivska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-289.28268" y="-397.67792"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="79042454" label="Dubey">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="71.476845" y="-86.373795"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="81394965" label="Krupa">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="360.14035" y="-252.40558"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="82516160" label="Prots">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-116.27853" y="-373.13986"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="84004032" label="Lisovich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="107.3325" y="481.52225"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="84404180" label="Mishula">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="160.47826" y="21.782944"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="85441449" label="Lenart">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="375.70267" y="424.91837"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="85457027" label="Karpenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="368.68698" y="-416.47058"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="85485390" label="Putas">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="272.41653" y="41.32524"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="87073639" label="Tronenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="90.638466" y="432.11948"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="88093665" label="Frolova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="457.24625" y="-191.44536"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="88480359" label="Sych">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="363.80606" y="-338.7735"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="88600461" label="❤❤❤">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="148.15471" y="-211.09813"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="92099237" label="Chumak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="489.4587" y="-20.43312"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="92218425" label="Stanishevska-Voloshin">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-388.45395" y="-166.09468"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="94089905" label="Strikhar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-95.43142" y="31.893845"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="95929195" label="Demtsio-Shpuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-201.4106" y="74.5609"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="97021938" label="Kalyamansky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-209.37254" y="-417.75635"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="97154420" label="Gaponenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-116.250084" y="-205.81026"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="98681120" label="Pavelko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="453.33798" y="78.995895"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="99332527" label="Steshenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="337.63785" y="258.69638"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="104244397" label="Zalipsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="148.74785" y="-10.52684"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="105320209" label="Gnatischak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-176.48723" y="-412.25522"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="105426467" label="Gamar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-45.754475" y="-308.77884"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="105528105" label="Kovnatsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-354.74335" y="290.41702"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="107762873" label="Boruta">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="486.93845" y="-362.2281"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="108614346" label="Korchevsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-305.64413" y="-339.7899"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="109809343" label="Shpuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-242.71349" y="-21.391098"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="110374280" label="Kovalik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-155.59035" y="-173.2358"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="110375910" label="Ustritsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="212.46367" y="-193.78416"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="110583528" label="Gnatischak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-476.0928" y="-104.49477"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="110869962" label="Vilk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="71.77433" y="-272.4943"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="112926668" label="Melnik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-238.50493" y="271.4243"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="114273169" label="Glozhik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="385.55032" y="-487.41043"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="114726719" label="Gnatik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="342.67953" y="-40.496048"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="116390652" label="Pauk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-140.69157" y="160.75981"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="116827643" label="Lapitska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-157.11128" y="361.84225"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="117514054" label="Rudika">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="376.5466" y="-158.27367"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="119890347" label="Kovnatska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="209.04271" y="-149.68672"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="120056845" label="Bun">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="326.41318" y="-180.44246"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="123080282" label="Fradchik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="250.2589" y="183.64214"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="123189024" label="Litvinenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="296.57944" y="-352.5566"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="124511916" label="Gursky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-131.95485" y="-340.93784"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="124992116" label="Chumak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="427.00302" y="-366.69022"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="125204677" label="Koval">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="107.30949" y="-258.73944"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="127472938" label="Kovalik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-263.13348" y="-180.51942"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="128056510" label="Koribska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="141.7429" y="-204.89296"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="129404323" label="Frolova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="34.830547" y="493.9938"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="129729632" label="Prishlyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="120.60764" y="463.7009"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="131804574" label="Briliovska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-398.16028" y="-443.15298"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="131953893" label="Pisariv-Tokar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="398.69003" y="179.5598"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="132225809" label="Vasilyev">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-303.92618" y="-98.64342"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="132534966" label="Kopichak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="47.15257" y="274.31216"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="132590261" label="Senkalsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="71.23539" y="338.98294"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="133060033" label="Chopik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-299.75092" y="161.04533"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="133342483" label="Budnik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="122.21928" y="495.38663"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="134458532" label="Slivka">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-268.65973" y="103.500595"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="134662964" label="Latsik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-23.691427" y="-463.85706"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="134724640" label="Kozlovsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="471.37546" y="157.59355"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="135344870" label="Gornyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-166.60414" y="-457.53998"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="135461079" label="Barabash">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-316.01743" y="-26.720078"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="135557034" label="Osenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="125.32664" y="-149.59395"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="136150156" label="Rey">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-206.46587" y="278.57364"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="136304924" label="Lapitsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-387.68246" y="-308.43314"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="136386544" label="Shpuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="426.03513" y="32.565353"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="137382899" label="Gruntkovska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="363.4993" y="28.72026"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="138408250" label="Ischenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-332.5967" y="430.57553"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="138735900" label="Goncharova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-321.01028" y="-432.9754"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="140007252" label="Kurilo">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="69.69102" y="172.11943"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="142350908" label="Zagvoyska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="402.50058" y="-460.6134"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="142581127" label="Slipetska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-156.97777" y="-338.85422"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="143907090" label="Black">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-253.66402" y="14.084518"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="145084214" label="Mikhaylishin">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-140.50325" y="98.05443"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="145463759" label="Antonenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-295.26035" y="153.3892"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="145940945" label="Guk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="65.0391" y="-255.71663"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="151045086" label="Pits">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="366.9017" y="63.837387"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="151171809" label="Masterova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-353.85385" y="-7.2018585"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="151392584" label="Paranchak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-42.463917" y="-378.0218"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="151414241" label="Svavolya">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-169.28484" y="261.60226"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="152489995" label="Zamlinsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="230.79063" y="-66.175064"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="153358667" label="Kalashnik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-484.3913" y="142.42961"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="154054279" label="Labuda-Kriveyko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-77.643486" y="-108.0887"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="156077604" label="Belinsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="8.341533" y="-316.93356"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="157263982" label="Tokar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="324.9902" y="-369.23718"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="157410082" label="Voytovich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="46.248943" y="159.29051"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="158114764" label="Kuzytskyy">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-305.73166" y="-450.24014"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="159262950" label="Zaremba">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-86.27514" y="201.20445"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="159276149" label="Popovich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="114.242714" y="-28.218185"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="161258967" label="Prishlyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-83.407585" y="-321.2214"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="161911396" label="Mulyar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-343.23288" y="436.6866"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="163888074" label="Guk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-307.60202" y="322.70847"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="164085078" label="Izak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="153.61809" y="90.59343"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="173168109" label="Grayson">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-163.60481" y="-340.77014"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="176151662" label="Stechinska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-332.86655" y="-374.89926"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="178709832" label="Minyalko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="105.212135" y="471.3256"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="178992676" label="Gavrilyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-207.05577" y="-255.01411"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="185667515" label="Pasichny">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="23.672525" y="-336.2052"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="193946402" label="Rudavsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="257.47635" y="198.59636"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="198969547" label="Ignatova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="64.96635" y="105.946335"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="199000483" label="Shumskaya">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-116.74813" y="-7.942978"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="200522655" label="Zamlinsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-299.65625" y="-246.78387"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="203932604" label="Rusinyak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-113.38152" y="-473.41855"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="204205380" label="Lopatovsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-478.26855" y="107.79753"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="206654557" label="Temnova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-354.61014" y="47.590317"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="208594950" label="Tsibulsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="329.14847" y="-131.58684"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="211927350" label="Knyazhy">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-472.0198" y="-24.997604"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="214848546" label="Forinnaya">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-455.47684" y="440.64505"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="215447896" label="Zhuravel-Seymivska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="110.966774" y="395.97995"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="217154563" label="Rudavska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-435.50845" y="-168.22011"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="225098270" label="Bun">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="128.61833" y="244.57146"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="229035103" label="Lapitska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-303.01758" y="337.9138"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="230749732" label="Nazarenko">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-204.22432" y="467.1119"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="231991556" label="Yarmosh">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="139.87224" y="346.1025"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="241098091" label="Gura">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-275.42432" y="-222.09743"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="241967987" label="Kovalik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="54.717876" y="-479.37076"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="247203008" label="Bodak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-484.14197" y="446.6066"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="250955348" label="Syutik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="164.55418" y="-379.99704"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="252130386" label="Ustritsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="247.6986" y="-73.03749"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="256791504" label="Mulyar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="461.96707" y="200.08928"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="259685629" label="Veretyuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-493.63696" y="35.82933"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="259898413" label="Popovich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-447.8677" y="498.81424"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="260794608" label="Slipetskyi">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="309.07687" y="-177.75731"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="262167636" label="Libik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-124.76653" y="-130.8296"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="268750466" label="Oliynik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="253.3585" y="228.07549"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="270909916" label="Mulyar">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-446.3469" y="229.79478"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="281543344" label="Morda">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-505.73517" y="135.05888"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="281665446" label="Hrysiak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-108.44631" y="136.17577"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="287537146" label="Ivanova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-301.2502" y="417.33627"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="288978190" label="Publishing-House">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-382.05588" y="240.5866"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="289822586" label="Lyubchinsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-44.562763" y="174.38438"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="294510087" label="Karpetsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-190.94655" y="105.130905"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="308398657" label="Buffalo">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-271.53732" y="406.051"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="322287433" label="Propoy">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="51.80937" y="-440.1747"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="324073753" label="Ilevich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="335.6381" y="9.623215"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="325260722" label="Nikitina">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="-182.55333" y="56.4337"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="340544641" label="Popovich">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="104.047035" y="128.25255"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="340593445" label="Tovarnitsky">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="202.74657" y="-241.1939"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="340632519" label="Tovarnitska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="310.27805" y="-439.27057"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="354735329" label="Temnova">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="166.13481" y="431.76407"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="360461330" label="Shevchik">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="247.85661" y="154.51207"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="365112368" label="Rudavska-Kuzitska">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="136.84282" y="-456.88574"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="377606627" label="Stadniychuk">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="281.03622" y="-152.921"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+      <node id="378739449" label="Paranchak">
+        <attvalues>
+          <attvalue for="2" value="true"/>
+          <attvalue for="0" value="http://gephi.org"/>
+          <attvalue for="1" value="1.0"/>
+        </attvalues>
+        <viz:size value="10.0"/>
+        <viz:position x="407.56277" y="377.16068"/>
+        <viz:color r="255" g="255" b="255"/>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="5bcf0f59-961e-4d3a-91b6-c7555d31e2c0" source="4564170" target="7868452" weight="2.0"/>
+      <edge id="53533e06-aed5-47fc-b877-61804e0d9bec" source="4564170" target="10038307" weight="2.0"/>
+      <edge id="5543470b-c4c4-46bb-82b0-55fc5f2f90bb" source="7868452" target="10038307" weight="2.0"/>
+      <edge id="d871c249-8027-487a-b9c6-c81543bfcd05" source="10272539" target="4564170"/>
+      <edge id="108ba534-1591-4f48-bd0a-e2dcf29a9baf" source="10272539" target="10038307"/>
+      <edge id="3c1b0ec5-9eda-4c62-992a-045d7dcff4f7" source="11166319" target="4564170"/>
+      <edge id="6273ad68-9d62-43c9-a2f7-ff559aa6a9ed" source="11166319" target="7868452"/>
+      <edge id="af8754f2-aa13-4ead-a033-f6b79e783be1" source="11166319" target="10038307"/>
+      <edge id="0bb46979-2ca6-4a18-b0a1-9e4642455f15" source="12139010" target="10038307"/>
+      <edge id="675d4c72-6f16-4e2e-bad4-dd6fcbfb94dc" source="12234366" target="4564170"/>
+      <edge id="617bb860-9b82-404d-864b-be33dffc1740" source="12234366" target="7868452"/>
+      <edge id="e8d4de02-3269-41a9-8ebd-ed2ba9e86b93" source="12234366" target="10038307"/>
+      <edge id="4b4d9e3a-c1ae-4bc8-91ee-2d11e1e0546d" source="12791434" target="4564170"/>
+      <edge id="74b6a550-549d-4c4b-a9d8-e0279d4dd221" source="12791434" target="7868452"/>
+      <edge id="f7026b30-7f83-47a8-9e3f-6930e2281077" source="12791434" target="10038307"/>
+      <edge id="33f853cd-d24b-4982-b2da-c06c2e7f6f13" source="14032977" target="10038307"/>
+      <edge id="523b320c-ce3e-4107-95aa-983c80141622" source="16696302" target="7868452"/>
+      <edge id="c0430557-6803-495b-9f8e-d5e091815d70" source="17014525" target="7868452"/>
+      <edge id="a38a3527-dc92-4a29-9243-6312fc256aa2" source="17278842" target="4564170"/>
+      <edge id="186bb824-fcd9-40b8-a5b1-33c5ba302df1" source="17278842" target="5335683"/>
+      <edge id="070aefe2-fd7a-4652-a13d-641a7a6c59b2" source="18574195" target="4564170"/>
+      <edge id="daf11637-64bd-4267-aeb1-c8882b61baa6" source="18574195" target="7868452"/>
+      <edge id="ab9f1dff-f3de-4fef-97d9-7943be7d139b" source="18574195" target="10038307"/>
+      <edge id="29b87d35-e087-4502-842d-eaf2f1bdfeb4" source="18927057" target="7868452"/>
+      <edge id="1d21b36d-5990-4d52-9ee2-7b212942340f" source="18927057" target="10038307"/>
+      <edge id="9b05ad7a-b3fe-403f-bf1f-c40ed8750abe" source="20271917" target="4564170"/>
+      <edge id="5325720c-9fdb-4cd7-9c78-f18cc3db1f09" source="20271917" target="10038307"/>
+      <edge id="f5a9a0c5-0345-4dba-8b2e-62c0ba566a65" source="21255490" target="4564170"/>
+      <edge id="597e1406-5368-4128-ae46-6e8f92de0b3b" source="24695554" target="4564170"/>
+      <edge id="a87cd45a-ff1e-4240-a35e-29acfcf85f2a" source="25056835" target="10038307"/>
+      <edge id="78f17d5b-208b-4761-9923-7a3ef299a598" source="25705268" target="4564170"/>
+      <edge id="085f3adf-fa40-47cd-a973-5a72b1d0a862" source="25705268" target="7868452"/>
+      <edge id="ff9ffedd-0934-41b2-8bd2-6870eaa81a4d" source="25705268" target="10038307"/>
+      <edge id="0c20961d-8c20-4fab-ac04-970c7b358fc7" source="30163937" target="5335683"/>
+      <edge id="8be32b47-993b-4387-8efb-2464442ad891" source="30666289" target="4564170"/>
+      <edge id="8eca592a-0fed-4702-b93a-e31370d7a9a6" source="30666289" target="7868452"/>
+      <edge id="747ab0b9-7da6-4899-a8ff-73c5ac5cbeb6" source="30666289" target="10038307"/>
+      <edge id="b905c0d5-82e4-4fff-8bda-eb915a4860a8" source="31988992" target="4564170"/>
+      <edge id="c83f95c7-3169-4263-aa3d-b456d9c3d7a1" source="31988992" target="10038307"/>
+      <edge id="df2eadb8-529b-46ca-bd3f-760444cfa5d2" source="36475093" target="4564170"/>
+      <edge id="4af54bd1-a771-4a8d-87bc-fa2f5121d0a3" source="36475093" target="7868452"/>
+      <edge id="900948c7-b99f-429d-86f1-49290a8694ca" source="36475093" target="10038307"/>
+      <edge id="39ba4220-c977-4986-a024-43cb5b742ae9" source="36888743" target="7868452"/>
+      <edge id="dd26736b-3081-472d-b69d-9d44da418caa" source="36888743" target="10038307"/>
+      <edge id="646b9101-2ff9-427e-a3e5-4326f6452a6b" source="37823199" target="4564170"/>
+      <edge id="952f9483-1339-4c22-8ea1-29c486e1ddf9" source="37823199" target="10038307"/>
+      <edge id="1161e5ae-76be-4abd-8a39-0c9d46330f02" source="38160092" target="4564170"/>
+      <edge id="1b6e568e-7a33-45f2-b79d-14b186295c42" source="38160092" target="10038307"/>
+      <edge id="6639c9ff-cafe-4d10-97bb-915946a29049" source="42358040" target="4564170"/>
+      <edge id="805cd701-766a-47f9-9f53-b7eb183e94af" source="42358040" target="10038307"/>
+      <edge id="73415a7a-c60a-4c5f-b7ad-8dca19d73a04" source="44846310" target="4564170"/>
+      <edge id="c421c9b9-49d4-4050-a402-63babac9bc8e" source="44846310" target="7868452"/>
+      <edge id="d474aaa7-bc69-4251-9a22-4bae01e1d5aa" source="44846310" target="7961682"/>
+      <edge id="ddd79b1a-3d8e-473a-9342-f98baadf537e" source="44846310" target="10038307"/>
+      <edge id="fc105fd1-0cb6-4ed2-be21-527ac87ebd07" source="49551087" target="7868452"/>
+      <edge id="5cf539ed-0e67-4e35-b3ef-39af1bd4edff" source="49551087" target="10038307"/>
+      <edge id="27ba89ac-b681-4c57-8329-2a923d008314" source="51559239" target="5335683"/>
+      <edge id="160641e4-aa8f-4d68-81bf-9e76389318eb" source="51654379" target="4564170"/>
+      <edge id="e6995b5d-b9d5-49bd-a77d-458e9f2139bb" source="51654379" target="7868452"/>
+      <edge id="4e41c564-9d71-4f4c-a403-80faeb26dcc2" source="51654379" target="10038307"/>
+      <edge id="9593d0f2-294b-4aa9-82c8-30cc5703e351" source="87073639" target="4564170"/>
+      <edge id="b38f274e-2c5a-4a78-a260-20a939f8a9d1" source="87073639" target="10038307"/>
+      <edge id="fd3e03a5-e72e-46ee-b148-524bdefc14a5" source="97154420" target="4564170"/>
+      <edge id="aabb0608-4cce-4aab-93ce-4948334839ff" source="97154420" target="10038307"/>
+      <edge id="10d16f8e-c343-48d2-b9b1-8d66927d6235" source="112926668" target="7868452"/>
+      <edge id="b7e20bad-577a-4d12-ac60-c844e648625f" source="112926668" target="10038307"/>
+      <edge id="8dcc625e-8ee2-4869-b008-fa0a727f78aa" source="138408250" target="7868452"/>
+      <edge id="8479012f-a58d-4773-8b4b-d5326fa58ab1" source="157410082" target="4564170"/>
+      <edge id="280f6e51-dd04-4639-8c88-a562d0438abc" source="157410082" target="10038307"/>
+      <edge id="332f8336-d789-4f6a-a7c4-0782ada8cb28" source="173168109" target="10038307"/>
+      <edge id="e0baaec2-56d7-4c22-b358-da0b469b0a7a" source="230749732" target="4564170"/>
+      <edge id="70c29c77-9718-42f7-a10a-64d6ffe39a95" source="230749732" target="7868452"/>
+      <edge id="fd7c88c6-67fe-4002-a970-c91c2dfdc6bf" source="230749732" target="10038307"/>
+      <edge id="fa3b6926-39bf-47b7-b367-0a13784e7c93" source="231991556" target="4564170"/>
+      <edge id="4c25ac63-1727-45f8-a8e7-231f0316227d" source="231991556" target="10038307"/>
+      <edge id="3f22364c-9de8-401c-a11b-6d678621a51f" source="288978190" target="4564170"/>
+      <edge id="ed445fa0-e6b2-41f9-b2d6-e036c974a8f6" source="325260722" target="7961682"/>
+    </edges>
+  </graph>
+</gexf>
