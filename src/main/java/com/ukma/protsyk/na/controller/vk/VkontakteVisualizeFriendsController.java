@@ -66,7 +66,7 @@ public class VkontakteVisualizeFriendsController {
                 map.put(users.get(i).getId().toString(), ids2);
                 System.out.println("User:"+users.get(i).getId().toString() +"Friends: "+ids2.toString());
                 try {
-                    Thread.sleep(5000);
+                    Thread.sleep(2000);
                 } catch (InterruptedException ex) {
                     Thread.currentThread().interrupt();
                 }

@@ -31,6 +31,15 @@ import it.uniroma1.dis.wsngroup.gexf4j.core.impl.StaxGraphWriter;
 import it.uniroma1.dis.wsngroup.gexf4j.core.impl.data.AttributeListImpl;
 import it.uniroma1.dis.wsngroup.gexf4j.core.impl.viz.ColorImpl;
 import it.uniroma1.dis.wsngroup.gexf4j.core.viz.*;
+import org.gephi.appearance.api.*;
+import org.gephi.appearance.plugin.PartitionElementColorTransformer;
+import org.gephi.appearance.plugin.palette.Palette;
+import org.gephi.appearance.plugin.palette.PaletteManager;
+import org.gephi.graph.api.Column;
+import org.gephi.graph.api.GraphController;
+import org.gephi.graph.api.GraphModel;
+import org.gephi.statistics.plugin.Modularity;
+import org.openide.util.Lookup;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -270,6 +279,24 @@ public class DynamicGexfGraph {
             }
 
         }
+
+        GraphModel graphModel = Lookup.getDefault().lookup(GraphController.class).getGraphModel();
+        AppearanceController appearanceController = Lookup.getDefault().lookup(AppearanceController.class);
+        AppearanceModel appearanceModel = appearanceController.getModel();
+
+
+        //Run modularity algorithm - community detection
+        Modularity modularity = new Modularity();
+        modularity.execute(graphModel);
+
+        //Partition with 'modularity_class', just created by Modularity algorithm
+        Column modColumn = graphModel.getNodeTable().getColumn(Modularity.MODULARITY_CLASS);
+        Function func2 = appearanceModel.getNodeFunction((org.gephi.graph.api.Graph) graph, modColumn, PartitionElementColorTransformer.class);
+        Partition partition2 = ((PartitionFunction) func2).getPartition();
+        System.out.println(partition2.size() + " partitions found");
+        Palette palette2 = PaletteManager.getInstance().randomPalette(partition2.size());
+        partition2.setColors(palette2.getColors());
+        appearanceController.transform(func2);
 
 
 
