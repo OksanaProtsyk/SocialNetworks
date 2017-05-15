@@ -280,26 +280,6 @@ public class DynamicGexfGraph {
 
         }
 
-        GraphModel graphModel = Lookup.getDefault().lookup(GraphController.class).getGraphModel();
-        AppearanceController appearanceController = Lookup.getDefault().lookup(AppearanceController.class);
-        AppearanceModel appearanceModel = appearanceController.getModel();
-
-
-        //Run modularity algorithm - community detection
-        Modularity modularity = new Modularity();
-        modularity.execute(graphModel);
-
-        //Partition with 'modularity_class', just created by Modularity algorithm
-        Column modColumn = graphModel.getNodeTable().getColumn(Modularity.MODULARITY_CLASS);
-        Function func2 = appearanceModel.getNodeFunction((org.gephi.graph.api.Graph) graph, modColumn, PartitionElementColorTransformer.class);
-        Partition partition2 = ((PartitionFunction) func2).getPartition();
-        System.out.println(partition2.size() + " partitions found");
-        Palette palette2 = PaletteManager.getInstance().randomPalette(partition2.size());
-        partition2.setColors(palette2.getColors());
-        appearanceController.transform(func2);
-
-
-
      /*   Node me = graph.createNode(act.getId().toString());
         me
                 .setLabel("OKSANA")

@@ -45,7 +45,7 @@
     });
 
     sigma.parsers.gexf(
-            '/resources/static/assets/data/graph_out.gexf',
+            '/resources/static/assets/data/graph_com.gexf',
             {
                 container: 'sigma-container'
             },
@@ -74,14 +74,14 @@
                         if (toKeep[n.id])
                             n.color = n.originalColor;
                         else
-                            n.color = '#eee';
+                            n.color = '#636363';
                     });
 
                     s.graph.edges().forEach(function(e) {
                         if (toKeep[e.source] && toKeep[e.target])
                             e.color = e.originalColor;
                         else
-                            e.color = '#eee';
+                            e.color = '#636363';
                     });
 
                     // Since the data has been modified, we need to
