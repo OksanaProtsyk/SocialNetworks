@@ -50,7 +50,10 @@ public class VKontakteFriendsController {
 		List<String> ids = userIds.getItems().stream().map(Object::toString).collect(Collectors.toList());
 		List<UserXtrCounters> users = vk.users().get(vkontakte.getUserActor())
 				.userIds(ids)
-				.fields(UserField.PHOTO_50)
+				.fields(UserField.PHOTO_50, UserField.BDATE, UserField.CITY, UserField.COUNTRY, UserField.HOME_TOWN,
+						UserField.EDUCATION, UserField.UNIVERSITIES,
+						UserField.SCHOOLS, UserField.OCCUPATION, UserField.INTERESTS, UserField.MUSIC,
+						UserField.MOVIES, UserField.TV, UserField.BOOKS, UserField.GAMES, UserField.ABOUT, UserField.QUOTES)
 				.lang(Lang.EN)
 				.execute();
 		model.addAttribute("friends", users);

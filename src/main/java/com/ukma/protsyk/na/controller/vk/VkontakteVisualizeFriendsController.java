@@ -54,7 +54,7 @@ public class VkontakteVisualizeFriendsController {
         model.addAttribute("friends", users);
 
         Map<String,List<String>> map = new HashMap<>();
-        for (int i =0;i<5;i++){
+        for (int i =0;i<25;i++){
             try {
                 GetResponse userIds2 = vk.friends().get().userId(users.get(i).getId()).execute();
                 List<String> ids2 = userIds2.getItems().stream().map(Object::toString).collect(Collectors.toList());
