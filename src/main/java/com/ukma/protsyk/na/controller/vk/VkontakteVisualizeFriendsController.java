@@ -47,14 +47,21 @@ public class VkontakteVisualizeFriendsController {
         GetResponse userIds = vk.friends().get(vkontakte.getUserActor()).execute();
         List<String> ids = userIds.getItems().stream().map(Object::toString).collect(Collectors.toList());
         List<UserXtrCounters> users = vk.users().get(vkontakte.getUserActor())
-                .userIds(ids)
-                .fields(UserField.PHOTO_50)
+                .fields(UserField.PHOTO_50, UserField.SEX, UserField.BDATE, UserField.CITY, UserField.COUNTRY,UserField.LISTS, UserField.DOMAIN,UserField.HOME_TOWN,
+                        UserField.CONTACTS, UserField.SITE,
+                        UserField.EDUCATION, UserField.UNIVERSITIES,
+                        UserField.FOLLOWERS_COUNT,UserField.COUNTERS,
+                        UserField.NICKNAME,  UserField.RELATIVES,
+                        UserField.RELATION,     UserField.PERSONAL,
+                        UserField.CONNECTIONS, UserField.EXPORTS,UserField.WALL_COMMENTS ,
+                        UserField.SCHOOLS, UserField.OCCUPATION, UserField.ACTIVITIES,UserField.INTERESTS, UserField.MUSIC,
+                        UserField.MOVIES, UserField.TV, UserField.BOOKS, UserField.GAMES, UserField.ABOUT, UserField.QUOTES,UserField.CAREER, UserField.MILITARY)
                 .lang(Lang.EN)
                 .execute();
         model.addAttribute("friends", users);
 
         Map<String,List<String>> map = new HashMap<>();
-        for (int i =0;i<25;i++){
+        for (int i =0;i<users.size();i++){
             try {
                 GetResponse userIds2 = vk.friends().get().userId(users.get(i).getId()).execute();
                 List<String> ids2 = userIds2.getItems().stream().map(Object::toString).collect(Collectors.toList());

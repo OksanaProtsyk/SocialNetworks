@@ -12,6 +12,7 @@ import com.vk.api.sdk.httpclient.HttpTransportClient;
 import com.vk.api.sdk.objects.friends.FriendStatus;
 import com.vk.api.sdk.objects.friends.responses.GetResponse;
 import com.vk.api.sdk.objects.users.UserXtrCounters;
+import com.vk.api.sdk.queries.users.UserField;
 import it.uniroma1.dis.wsngroup.gexf4j.core.Edge;
 import it.uniroma1.dis.wsngroup.gexf4j.core.EdgeType;
 import it.uniroma1.dis.wsngroup.gexf4j.core.Gexf;
@@ -249,19 +250,81 @@ public class DynamicGexfGraph {
         AttributeList attrList = new AttributeListImpl(AttributeClass.NODE);
         graph.getAttributeLists().add(attrList);
 
-        Attribute attUrl = attrList.createAttribute("0", AttributeType.STRING, "url");
-        Attribute attIndegree = attrList.createAttribute("1", AttributeType.FLOAT, "indegree");
-        Attribute attFrog = attrList.createAttribute("2", AttributeType.BOOLEAN, "frog")
-                .setDefaultValue("true");
+        Attribute attphoto = attrList.createAttribute("0", AttributeType.STRING, "PHOTO_50");
+        Attribute attSex = attrList.createAttribute("1", AttributeType.FLOAT, "SEX");
+        Attribute attCity = attrList.createAttribute("2", AttributeType.STRING, "CITY");
+        Attribute attBDATE = attrList.createAttribute("3", AttributeType.STRING, "BDATE");
+        Attribute attCOUNTRY = attrList.createAttribute("4", AttributeType.BOOLEAN, "COUNTRY");
+        Attribute attLISTS= attrList.createAttribute("5", AttributeType.LISTSTRING, "LISTS");
+        Attribute attDOMAIN = attrList.createAttribute("6", AttributeType.STRING, "DOMAIN");
+        Attribute attHOME_TOWN = attrList.createAttribute("7", AttributeType.STRING, "HOME_TOWN");
+        Attribute attCONTACTS = attrList.createAttribute("8", AttributeType.LISTSTRING, "CONTACTS");
+        Attribute attSITE = attrList.createAttribute("9", AttributeType.STRING, "SITE");
+        Attribute attUNIVERSITIES = attrList.createAttribute("10", AttributeType.LISTSTRING, "UNIVERSITIES");
+        Attribute attFOLLOWERS_COUNT= attrList.createAttribute("11", AttributeType.STRING, "FOLLOWERS_COUNT");
+        Attribute attRELATIVES = attrList.createAttribute("12", AttributeType.LISTSTRING, "RELATIVES");
+        Attribute attCOUNTERS = attrList.createAttribute("13", AttributeType.LISTSTRING, "COUNTERS");
+        Attribute attNICKNAME = attrList.createAttribute("14", AttributeType.STRING, "NICKNAME");
+        Attribute attRELATION = attrList.createAttribute("15", AttributeType.STRING, "RELATION");
+        Attribute attPERSONAL = attrList.createAttribute("16", AttributeType.STRING, "PERSONAL");
+        Attribute attCONNECTIONS = attrList.createAttribute("17", AttributeType.LISTSTRING, "CONNECTIONS");
+
+        Attribute attEXPORTS = attrList.createAttribute("18", AttributeType.LISTSTRING, "EXPORTS");
+        Attribute attWALL_COMMENTS = attrList.createAttribute("19", AttributeType.LISTSTRING, "WALL_COMMENTS");
+        Attribute attSCHOOLS= attrList.createAttribute("20", AttributeType.LISTSTRING, "SCHOOLS");
+        Attribute attOCCUPATION = attrList.createAttribute("21", AttributeType.STRING, "OCCUPATION");
+        Attribute attACTIVITIES= attrList.createAttribute("22", AttributeType.LISTSTRING, "ACTIVITIES");
+        Attribute attINTERESTS= attrList.createAttribute("23", AttributeType.LISTSTRING, "INTERESTS");
+        Attribute attMUSIC= attrList.createAttribute("24", AttributeType.LISTSTRING, "MUSIC");
+        Attribute attMOVIES= attrList.createAttribute("25", AttributeType.LISTSTRING, "MOVIES");
+
+        Attribute attTV= attrList.createAttribute("26", AttributeType.LISTSTRING, "TV");
+        Attribute attBOOKS= attrList.createAttribute("27", AttributeType.LISTSTRING, "BOOKS");
+        Attribute attGAMES= attrList.createAttribute("28", AttributeType.LISTSTRING, "GAMES");
+        Attribute attABOUT= attrList.createAttribute("29", AttributeType.STRING, "ABOUT");
+        Attribute attQUOTES= attrList.createAttribute("30", AttributeType.LISTSTRING, "QUOTES");
+        Attribute attCAREER= attrList.createAttribute("31", AttributeType.STRING, "CAREER");
+        Attribute attMILITARY= attrList.createAttribute("32", AttributeType.STRING, "MILITARY");
 
 
         for (UserXtrCounters u : users) {
             Node gephi = graph.createNode(u.getId().toString());
             gephi
-                    .setLabel(u.getLastName())
+                    .setLabel(u.getFirstName()+ u.getLastName())
                     .getAttributeValues()
-                    .addValue(attUrl, "http://gephi.org")
-                    .addValue(attIndegree, "1");
+                    .addValue(attphoto, u.getPhoto50())
+                    .addValue(attSex,u.getSex().toString())
+                    .addValue(attCity,u.getCity().getTitle())
+                    .addValue(attBDATE,u.getBdate())
+                    .addValue(attLISTS,"")
+                    .addValue(attCOUNTRY,u.getCountry().getTitle())
+                    .addValue(attDOMAIN,u.getDomain())
+                    .addValue(attHOME_TOWN,u.getHomeTown())
+                    .addValue(attCONTACTS,"")
+                    .addValue(attSITE,u.getSite())
+                    .addValue(attUNIVERSITIES,u.getUniversities().toString())
+                    .addValue(attFOLLOWERS_COUNT,u.getFollowersCount().toString())
+                    .addValue(attRELATIVES,u.getRelatives().toString())
+                    .addValue(attCOUNTERS,u.getCounters().toString())
+                    .addValue(attNICKNAME,u.getNickname())
+                    .addValue(attRELATION,u.getRelation().toString())
+                   .addValue(attPERSONAL,u.getPersonal().toString())
+                    .addValue(attCONNECTIONS,"")
+                    .addValue(attEXPORTS,u.getExports().toString())
+                    .addValue(attWALL_COMMENTS, "")
+                    .addValue(attSCHOOLS,u.getSchools().toString())
+                    .addValue(attOCCUPATION,u.getOccupation().getName())
+                    .addValue(attACTIVITIES,u.getActivities())
+                    .addValue(attINTERESTS, u.getInterests())
+                    .addValue(attMUSIC,u.getMusic())
+                    .addValue(attMOVIES,u.getMovies())
+                    .addValue(attTV,u.getTv())
+                    .addValue(attBOOKS,u.getBooks())
+                    .addValue(attGAMES, u.getGames())
+                    .addValue(attABOUT, u.getAbout())
+                    .addValue(attQUOTES,u.getQuotes())
+                    .addValue(attCAREER, u.getCareer().toString())
+                    .addValue(attMILITARY,u.getMilitary().toString());
         }
 
 
