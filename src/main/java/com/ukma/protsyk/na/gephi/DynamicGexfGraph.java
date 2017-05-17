@@ -237,8 +237,8 @@ public class DynamicGexfGraph {
 
         gexf.getMetadata()
                 .setLastModified(date.getTime())
-                .setCreator("Gephi.org")
-                .setDescription("A Web network");
+                .setCreator("Oksana Protsyk")
+                .setDescription("A Social Network");
 
 
         Graph graph = gexf.getGraph();
@@ -269,62 +269,59 @@ public class DynamicGexfGraph {
         Attribute attPERSONAL = attrList.createAttribute("16", AttributeType.STRING, "PERSONAL");
         Attribute attCONNECTIONS = attrList.createAttribute("17", AttributeType.LISTSTRING, "CONNECTIONS");
 
-        Attribute attEXPORTS = attrList.createAttribute("18", AttributeType.LISTSTRING, "EXPORTS");
-        Attribute attWALL_COMMENTS = attrList.createAttribute("19", AttributeType.LISTSTRING, "WALL_COMMENTS");
-        Attribute attSCHOOLS= attrList.createAttribute("20", AttributeType.LISTSTRING, "SCHOOLS");
-        Attribute attOCCUPATION = attrList.createAttribute("21", AttributeType.STRING, "OCCUPATION");
-        Attribute attACTIVITIES= attrList.createAttribute("22", AttributeType.LISTSTRING, "ACTIVITIES");
-        Attribute attINTERESTS= attrList.createAttribute("23", AttributeType.LISTSTRING, "INTERESTS");
-        Attribute attMUSIC= attrList.createAttribute("24", AttributeType.LISTSTRING, "MUSIC");
-        Attribute attMOVIES= attrList.createAttribute("25", AttributeType.LISTSTRING, "MOVIES");
+        Attribute attSCHOOLS= attrList.createAttribute("18", AttributeType.LISTSTRING, "SCHOOLS");
+        Attribute attOCCUPATION = attrList.createAttribute("19", AttributeType.STRING, "OCCUPATION");
+        Attribute attACTIVITIES= attrList.createAttribute("20", AttributeType.LISTSTRING, "ACTIVITIES");
+        Attribute attINTERESTS= attrList.createAttribute("21", AttributeType.LISTSTRING, "INTERESTS");
+        Attribute attMUSIC= attrList.createAttribute("22", AttributeType.LISTSTRING, "MUSIC");
+        Attribute attMOVIES= attrList.createAttribute("23", AttributeType.LISTSTRING, "MOVIES");
 
-        Attribute attTV= attrList.createAttribute("26", AttributeType.LISTSTRING, "TV");
-        Attribute attBOOKS= attrList.createAttribute("27", AttributeType.LISTSTRING, "BOOKS");
-        Attribute attGAMES= attrList.createAttribute("28", AttributeType.LISTSTRING, "GAMES");
-        Attribute attABOUT= attrList.createAttribute("29", AttributeType.STRING, "ABOUT");
-        Attribute attQUOTES= attrList.createAttribute("30", AttributeType.LISTSTRING, "QUOTES");
-        Attribute attCAREER= attrList.createAttribute("31", AttributeType.STRING, "CAREER");
-        Attribute attMILITARY= attrList.createAttribute("32", AttributeType.STRING, "MILITARY");
+        Attribute attTV= attrList.createAttribute("24", AttributeType.LISTSTRING, "TV");
+        Attribute attBOOKS= attrList.createAttribute("25", AttributeType.LISTSTRING, "BOOKS");
+        Attribute attGAMES= attrList.createAttribute("26", AttributeType.LISTSTRING, "GAMES");
+        Attribute attABOUT= attrList.createAttribute("27", AttributeType.STRING, "ABOUT");
+        Attribute attQUOTES= attrList.createAttribute("28", AttributeType.LISTSTRING, "QUOTES");
+        Attribute attCAREER= attrList.createAttribute("29", AttributeType.STRING, "CAREER");
+        Attribute attMILITARY= attrList.createAttribute("30", AttributeType.STRING, "MILITARY");
 
 
         for (UserXtrCounters u : users) {
             Node gephi = graph.createNode(u.getId().toString());
             gephi
-                    .setLabel(u.getFirstName()+ u.getLastName())
+                    .setLabel(((u.getFirstName() == null)?"":u.getFirstName())+ ((u.getLastName() == null)?"":u.getLastName()))
                     .getAttributeValues()
-                    .addValue(attphoto, u.getPhoto50())
-                    .addValue(attSex,u.getSex().toString())
-                    .addValue(attCity,u.getCity().getTitle())
-                    .addValue(attBDATE,u.getBdate())
+                    .addValue(attphoto, (u.getPhoto50() == null)?"":u.getPhoto50())
+                    .addValue(attSex,(u.getSex()==null)?"":u.getSex().toString())
+                    .addValue(attCity,(u.getCity() == null)?"":u.getCity().getTitle())
+                    .addValue(attBDATE,(u.getBdate() == null)?"":u.getBdate())
                     .addValue(attLISTS,"")
-                    .addValue(attCOUNTRY,u.getCountry().getTitle())
-                    .addValue(attDOMAIN,u.getDomain())
-                    .addValue(attHOME_TOWN,u.getHomeTown())
-                    .addValue(attCONTACTS,"")
-                    .addValue(attSITE,u.getSite())
-                    .addValue(attUNIVERSITIES,u.getUniversities().toString())
-                    .addValue(attFOLLOWERS_COUNT,u.getFollowersCount().toString())
-                    .addValue(attRELATIVES,u.getRelatives().toString())
-                    .addValue(attCOUNTERS,u.getCounters().toString())
-                    .addValue(attNICKNAME,u.getNickname())
-                    .addValue(attRELATION,u.getRelation().toString())
-                   .addValue(attPERSONAL,u.getPersonal().toString())
+                    .addValue(attCOUNTRY,(u.getCountry() == null)?"":u.getCountry().getTitle())
+                    .addValue(attDOMAIN,(u.getDomain() == null)?"":u.getDomain())
+                    .addValue(attHOME_TOWN,(u.getHomeTown() == null)?"":u.getHomeTown())
+                    .addValue(attSITE,(u.getSite() == null)?"":u.getSite())
+                    .addValue(attUNIVERSITIES,(u.getUniversities() == null)?"":u.getUniversities().toString())
+                    .addValue(attFOLLOWERS_COUNT,(u.getFollowersCount() == null)?"":u.getFollowersCount().toString())
+                    .addValue(attRELATIVES,(u.getRelatives() == null)?"":u.getRelatives().toString())
+                    .addValue(attCOUNTERS,(u.getCounters() == null)?"":u.getCounters().toString())
+                    .addValue(attNICKNAME,(u.getNickname() == null)?"":u.getNickname())
+                    .addValue(attRELATION,(u.getRelation() == null)?"":u.getRelation().toString())
+                    .addValue(attPERSONAL,(u.getPersonal() == null)?"":u.getPersonal().toString())
                     .addValue(attCONNECTIONS,"")
-                    .addValue(attEXPORTS,u.getExports().toString())
-                    .addValue(attWALL_COMMENTS, "")
-                    .addValue(attSCHOOLS,u.getSchools().toString())
-                    .addValue(attOCCUPATION,u.getOccupation().getName())
-                    .addValue(attACTIVITIES,u.getActivities())
-                    .addValue(attINTERESTS, u.getInterests())
-                    .addValue(attMUSIC,u.getMusic())
-                    .addValue(attMOVIES,u.getMovies())
-                    .addValue(attTV,u.getTv())
-                    .addValue(attBOOKS,u.getBooks())
-                    .addValue(attGAMES, u.getGames())
-                    .addValue(attABOUT, u.getAbout())
-                    .addValue(attQUOTES,u.getQuotes())
-                    .addValue(attCAREER, u.getCareer().toString())
-                    .addValue(attMILITARY,u.getMilitary().toString());
+                    .addValue(attSCHOOLS,(u.getSchools() == null)?"":u.getSchools().toString())
+                    .addValue(attOCCUPATION,(u.getOccupation() == null)?"":u.getOccupation().getName())
+                    .addValue(attACTIVITIES,(u.getActivities() == null)?"":u.getActivities())
+
+                    .addValue(attINTERESTS, (u.getInterests() == null)?"":u.getInterests())
+                    .addValue(attMUSIC,(u.getMusic() == null)?"":u.getMusic())
+                    .addValue(attMOVIES,(u.getMovies() == null)?"":u.getMovies())
+                    .addValue(attTV,(u.getTv() == null)?"":u.getTv())
+                    .addValue(attBOOKS,(u.getBooks() == null)?"":u.getBooks())
+                    .addValue(attGAMES,(u.getGames() == null)?"":u.getGames())
+                    .addValue(attABOUT,(u.getAbout() == null)?"": u.getAbout())
+                    .addValue(attQUOTES,(u.getQuotes() == null)?"":u.getQuotes())
+                    .addValue(attCAREER,(u.getCareer() == null)?"": u.getCareer().toString())
+                    .addValue(attMILITARY,(u.getMilitary() == null)?"":u.getMilitary().toString());
+            System.out.println(gephi);
         }
 
 
