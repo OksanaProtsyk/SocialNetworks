@@ -1,5 +1,6 @@
 package com.ukma.protsyk.na.gephi;
 
+import com.ukma.protsyk.na.tools.FeatureValue;
 import org.gephi.appearance.api.*;
 import org.gephi.appearance.plugin.PartitionElementColorTransformer;
 import org.gephi.appearance.plugin.palette.Palette;
@@ -19,11 +20,13 @@ import org.openide.util.Lookup;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by okpr0814 on 5/15/2017.
  */
-public class CommunityDetection {
+public class AgoCircleDiscovery {
     public static String FILE_PATH_IN = "src/main/webapp/resources/static/assets/data/graph_out.gexf";
     public static String FILE_PATH_OUT = "src/main/webapp/resources/static/assets/data/graph_com.gexf";
 
@@ -60,30 +63,20 @@ public class CommunityDetection {
 
         //Export
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
-
-        //Run modularity algorithm - community detection
-        Modularity modularity = new Modularity();
-        modularity.execute(graphModel);
         Graph graphpp = graphModel.getUndirectedGraph();
-       // Column c = graphModel.getNodeTable().getColumn("");
+        // Column c = graphModel.getNodeTable().getColumn("");
+        Set<String> set = new HashSet<>();
+
         for(Node n:graphpp.getNodes()){
-            System.out.println("BBB:  "+n.getAttribute("0").toString());
+            Object o = n.getAttribute("19");
+            if (o!=null) {
+                set.add(o.toString());
+            }
         }
 
+        System.out.println(set);
 
-        //Partition with 'modularity_class', just created by Modularity algorithm
-        Column modColumn = graphModel.getNodeTable().getColumn(Modularity.MODULARITY_CLASS);
-        Function func2 = appearanceModel.getNodeFunction(graph, modColumn, PartitionElementColorTransformer.class);
-        System.out.println("+++OOO++++ :"+func2);
-        Partition partition2 = ((PartitionFunction) func2).getPartition();
-        System.out.println(partition2.size() + " partitions found");
-        Palette palette2 = PaletteManager.getInstance().randomPalette(partition2.size());
-        int i =0;
-       for (Object o: partition2.getValues()){
-           partition2.setColor(o,palette2.getColors()[i]);
-           i++;
-       }
-        appearanceController.transform(func2);
+
 
 
         //Export

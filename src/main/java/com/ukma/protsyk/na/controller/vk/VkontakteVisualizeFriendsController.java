@@ -84,7 +84,7 @@ public class VkontakteVisualizeFriendsController {
         }
 
 
-        DynamicGexfGraph.generateGraph(vkontakte.getUserActor(),users,map);
+        DynamicGexfGraph.generateGraph(1,vkontakte.getUserActor(),users,map);
         ExportImport f = new ExportImport();
         f.script();
 

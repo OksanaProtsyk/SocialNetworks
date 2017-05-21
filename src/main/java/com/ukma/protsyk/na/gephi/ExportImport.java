@@ -32,6 +32,9 @@ import java.io.StringWriter;
 public class ExportImport {
     public static String FILE_PATH_IN = "src/main/webapp/resources/static/assets/data/graph.gexf";
     public static String FILE_PATH_OUT = "src/main/webapp/resources/static/assets/data/graph_out.gexf";
+    public static String FILE_PATH = "src/main/webapp/resources/static/assets/data/";
+    public static String FILE_END = ".gexf";
+    public static String FILE_OUT_END = "_out.gexf";
 
 
     public void script() {
@@ -46,12 +49,12 @@ public class ExportImport {
         //Import file
         Container container;
         try {
-            System.out.println("___"+ getClass());
+            System.out.println("___" + getClass());
             File file = new File(FILE_PATH_IN);
             container = importController.importFile(file);
             container.getLoader().setEdgeDefault(EdgeDirectionDefault.DIRECTED);   //Force DIRECTED
             container.getLoader().setAllowAutoNode(false);  //Don't create missing nodes
-            System.out.println("FILE "+ file.getName());
+            System.out.println("FILE " + file.getName());
 
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -68,7 +71,6 @@ public class ExportImport {
         }
 
 
-
         //Export full graph
         ExportController ec = Lookup.getDefault().lookup(ExportController.class);
         try {
@@ -77,8 +79,51 @@ public class ExportImport {
             ex.printStackTrace();
             return;
         }
+    }
 
 
+    public void script(String inFile) {
+        //Init a project - and therefore a workspace
+        ProjectController pc = Lookup.getDefault().lookup(ProjectController.class);
+        pc.newProject();
+        Workspace workspace = pc.getCurrentWorkspace();
+
+        //Get controllers and models
+        ImportController importController = Lookup.getDefault().lookup(ImportController.class);
+
+        //Import file
+        Container container;
+        try {
+            System.out.println("___" + getClass());
+            File file = new File(FILE_PATH + inFile + FILE_END);
+            container = importController.importFile(file);
+            container.getLoader().setEdgeDefault(EdgeDirectionDefault.DIRECTED);   //Force DIRECTED
+            container.getLoader().setAllowAutoNode(false);  //Don't create missing nodes
+            System.out.println("FILE " + file.getName());
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+            return;
+        }
+
+        //Append imported data to GraphAPI
+        importController.process(container, new DefaultProcessor(), workspace);
+
+        GraphModel graphModel = Lookup.getDefault().lookup(GraphController.class).getGraphModel();
+        Graph graph = graphModel.getGraph();
+        for (Node n : graph.getNodes()) {
+            n.setColor(Color.WHITE);
+        }
+
+
+        //Export full graph
+        ExportController ec = Lookup.getDefault().lookup(ExportController.class);
+        try {
+            ec.exportFile(new File(FILE_PATH + inFile + FILE_OUT_END));
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return;
+        }
 
 
     }
