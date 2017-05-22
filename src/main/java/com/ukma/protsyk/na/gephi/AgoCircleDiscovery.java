@@ -66,16 +66,18 @@ public class AgoCircleDiscovery {
         Graph graphpp = graphModel.getUndirectedGraph();
         // Column c = graphModel.getNodeTable().getColumn("");
         Set<String> set = new HashSet<>();
+        int count = 0;
 
         for(Node n:graphpp.getNodes()){
             Object o = n.getAttribute("19");
             if (o!=null) {
                 set.add(o.toString());
+                count++;
             }
         }
 
         System.out.println(set);
-
+        System.out.println(count);
 
 
 
