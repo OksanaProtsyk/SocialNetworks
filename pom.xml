@@ -99,8 +99,10 @@
         <dependency>
             <groupId>it.uniroma1.dis.wsngroup.gexf4j</groupId>
             <artifactId>gexf4j</artifactId>
-            <version>0.4.3-BETA</version>
-        </dependency><!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-stable -->
+            <version>1.0.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/nz.ac.waikato.cms.weka/weka-stable -->
         <dependency>
             <groupId>nz.ac.waikato.cms.weka</groupId>
             <artifactId>weka-stable</artifactId>

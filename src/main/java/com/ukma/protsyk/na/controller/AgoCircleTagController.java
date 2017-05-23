@@ -1,6 +1,7 @@
-package com.ukma.protsyk.na.controller.vk;
+package com.ukma.protsyk.na.controller;
 
 import com.ukma.protsyk.na.gephi.AgoCircleDiscovery;
+import com.ukma.protsyk.na.gephi.AgoTagCircle;
 import com.ukma.protsyk.na.gephi.CommunityDetection;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,8 +16,8 @@ public class AgoCircleTagController {
     @RequestMapping(value="/circle", method= RequestMethod.GET)
 
     public String detectCommunity(Model model) {
-        AgoCircleDiscovery comDet = new AgoCircleDiscovery();
-        comDet.script();
+        AgoTagCircle comDet = new AgoTagCircle();
+        comDet.script("graph_my");
         return "nodes";
     }
     }
