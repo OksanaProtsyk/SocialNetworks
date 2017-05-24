@@ -1,6 +1,8 @@
 package com.ukma.protsyk.na.gephi;
 
 
+import com.ukma.protsyk.na.tools.FeatureValue;
+import com.ukma.protsyk.na.tools.TagExtractorOfCircle;
 import org.gephi.appearance.api.AppearanceController;
 import org.gephi.appearance.api.AppearanceModel;
 import org.gephi.datalab.api.AttributeColumnsController;
@@ -67,7 +69,17 @@ public class AgoTagCircle {
         UndirectedGraph graph = graphModel.getUndirectedGraph();
         System.out.println("Nodes: " + graph.getNodeCount());
         System.out.println("Edges: " + graph.getEdgeCount());
-        System.out.println("Nodes:");
+        System.out.println("Nodes: ");
+
+        TagExtractorOfCircle tagExtractorOfCircle = new TagExtractorOfCircle();
+        Set<FeatureValue> featureValues = tagExtractorOfCircle.getAllFeaturesValues(graph);
+        System.out.println(featureValues);
+        System.out.println("***************************** ");
+
+        System.out.println(tagExtractorOfCircle.getAllUsersProfiles(featureValues,graph));
+
+        System.out.println("================: ");
+
 
 
         //List node columns
@@ -100,7 +112,7 @@ public class AgoTagCircle {
         for (Node i : graph.getNodes().toArray()) {
             for (Node j : graph.getNodes().toArray()) {
                 if (i.equals(j) || checkEdgeExistence(graph.getEdges().toArray(), i.getId(), j.getId()) || checkEdgeExistence(graph.getEdges().toArray(), j.getId(), i.getId())) {
-                    System.out.print("____________________________");
+                    System.out.println("____________________________");
                     continue;
                 }
                 Similarity similarity = new Similarity(graph, i, j);
