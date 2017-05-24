@@ -38,6 +38,8 @@ public class Similarity {
     }
 
     public double getVPS(){
+        //TODO
+
         return 0;
     }
 }
