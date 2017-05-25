@@ -6,7 +6,7 @@ package com.ukma.protsyk.na.tools;
 public enum FeatureTypes {
 
     HOME_TOWN ,
-    TOWN,
+    CITY,
     YEAR_BIRTHDAY,
     SCHOOL,
     UNIVERSITY,

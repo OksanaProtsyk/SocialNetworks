@@ -2,6 +2,7 @@ package com.ukma.protsyk.na.gephi;
 
 
 import com.ukma.protsyk.na.tools.FeatureValue;
+import com.ukma.protsyk.na.tools.ProfileFeature;
 import com.ukma.protsyk.na.tools.TagExtractorOfCircle;
 import org.gephi.appearance.api.AppearanceController;
 import org.gephi.appearance.api.AppearanceModel;
@@ -22,10 +23,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by okpr0814 on 5/23/2017.
@@ -76,7 +74,8 @@ public class AgoTagCircle {
         System.out.println(featureValues);
         System.out.println("***************************** ");
 
-        System.out.println(tagExtractorOfCircle.getAllUsersProfiles(featureValues,graph));
+        Map<Node, List<ProfileFeature>> node_profiles =           tagExtractorOfCircle.getAllUsersProfiles(featureValues,graph);
+        System.out.println(node_profiles);
 
         System.out.println("================: ");
 
@@ -102,21 +101,21 @@ public class AgoTagCircle {
         Set<Similarity> similaritySet = new HashSet<>();
 
         for (Edge e : graph.getEdges()) {
-            Similarity s = new Similarity(graph, e.getSource(), e.getTarget());
+            Similarity s = new Similarity( e.getSource(), e.getTarget(),graph,node_profiles);
             similaritySet.add(s);
         }
-
+        System.out.println("Similarity: "+similaritySet);
         double M_VPS = getM_VPS(similaritySet);
         double M_VTS = getM_VTS(similaritySet);
 
         for (Node i : graph.getNodes().toArray()) {
             for (Node j : graph.getNodes().toArray()) {
                 if (i.equals(j) || checkEdgeExistence(graph.getEdges().toArray(), i.getId(), j.getId()) || checkEdgeExistence(graph.getEdges().toArray(), j.getId(), i.getId())) {
-                    System.out.println("____________________________");
+                   // System.out.println("____________________________");
                     continue;
                 }
-                Similarity similarity = new Similarity(graph, i, j);
-                if ((similarity.getVPS() >= M_VPS) && (similarity.getVTS() >= M_VTS)) {
+                Similarity similarity = new Similarity( i, j,graph,node_profiles);
+                if ((similarity.getVPS() > M_VPS) && (similarity.getVTS() > M_VTS)) {
                     Edge e = graphModel.factory().newEdge(i, j, false);
                     e.setAttribute("del", "0");
                     graphModel.getUndirectedGraph().addEdge(e);
@@ -126,7 +125,7 @@ public class AgoTagCircle {
 
         }
 //second part
-        double similarityThreshold = 0.5;
+        double similarityThreshold = 0.3;
 
         List<SocialCircle> socialCircles = new ArrayList<>();
 
@@ -140,7 +139,7 @@ public class AgoTagCircle {
                 edgeCircle.add(i);
                 for (Edge j : edgeCircle) {
                     for (Edge k : graphModel.getUndirectedGraph().getEdges().toArray()) {
-                        if (!searchedEdges.contains(k) && (new EdgeSimilarity(graphModel.getUndirectedGraph(), j, k).getS(0.2) > similarityThreshold)) {
+                        if (!searchedEdges.contains(k) && (new EdgeSimilarity(graphModel.getUndirectedGraph(), j, k,node_profiles).getS(0.2) > similarityThreshold)) {
                             edgeCircle.add(k);
                             searchedEdges.add(k);
                         }
@@ -148,6 +147,7 @@ public class AgoTagCircle {
                 }
             }
             SocialCircle s = new SocialCircle();
+            //TODO fix this
             for (Edge ed : edgeCircle) {
                 s.addToCircle(ed.getSource());
                 s.addToCircle(ed.getTarget());
