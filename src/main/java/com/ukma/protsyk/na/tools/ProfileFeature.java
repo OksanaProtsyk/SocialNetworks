@@ -6,10 +6,10 @@ package com.ukma.protsyk.na.tools;
 public class ProfileFeature {
     FeatureValue featureValue;
     //0 or 1
-    Integer data;
+    Double data;
 
 
-    public ProfileFeature(FeatureValue featureValue, Integer data) {
+    public ProfileFeature(FeatureValue featureValue, Double data) {
         this.featureValue = featureValue;
         this.data = data;
     }
@@ -22,11 +22,11 @@ public class ProfileFeature {
         this.featureValue = featureValue;
     }
 
-    public Integer getData() {
+    public Double getData() {
         return data;
     }
 
-    public void setData(Integer data) {
+    public void setData(Double data) {
         this.data = data;
     }
 

@@ -18,12 +18,14 @@ import org.gephi.project.api.ProjectController;
 import org.gephi.project.api.Workspace;
 import org.openide.util.Lookup;
 
+import java.awt.*;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
 import java.lang.reflect.Array;
 import java.util.*;
+import java.util.List;
 
 /**
  * Created by okpr0814 on 5/23/2017.
@@ -74,11 +76,10 @@ public class AgoTagCircle {
         System.out.println(featureValues);
         System.out.println("***************************** ");
 
-        Map<Node, List<ProfileFeature>> node_profiles =           tagExtractorOfCircle.getAllUsersProfiles(featureValues,graph);
+        Map<Node, List<ProfileFeature>> node_profiles = tagExtractorOfCircle.getAllUsersProfiles(featureValues, graph);
         System.out.println(node_profiles);
 
         System.out.println("================: ");
-
 
 
         //List node columns
@@ -101,20 +102,23 @@ public class AgoTagCircle {
         Set<Similarity> similaritySet = new HashSet<>();
 
         for (Edge e : graph.getEdges()) {
-            Similarity s = new Similarity( e.getSource(), e.getTarget(),graph,node_profiles);
+            Similarity s = new Similarity(e.getSource(), e.getTarget(), graph, node_profiles);
             similaritySet.add(s);
         }
-        System.out.println("Similarity: "+similaritySet);
+        System.out.println("Similarity: " + similaritySet);
         double M_VPS = getM_VPS(similaritySet);
         double M_VTS = getM_VTS(similaritySet);
 
         for (Node i : graph.getNodes().toArray()) {
+            i.setSize(graph.getNeighbors(i).toCollection().size()/10+1);
+            i.setColor(Color.WHITE);
+
             for (Node j : graph.getNodes().toArray()) {
                 if (i.equals(j) || checkEdgeExistence(graph.getEdges().toArray(), i.getId(), j.getId()) || checkEdgeExistence(graph.getEdges().toArray(), j.getId(), i.getId())) {
-                   // System.out.println("____________________________");
+                    // System.out.println("____________________________");
                     continue;
                 }
-                Similarity similarity = new Similarity( i, j,graph,node_profiles);
+                Similarity similarity = new Similarity(i, j, graph, node_profiles);
                 if ((similarity.getVPS() > M_VPS) && (similarity.getVTS() > M_VTS)) {
                     Edge e = graphModel.factory().newEdge(i, j, false);
                     e.setAttribute("del", "0");
@@ -125,34 +129,44 @@ public class AgoTagCircle {
 
         }
 //second part
-        double similarityThreshold = 0.3;
+        double similarityThreshold = 0.1;
 
         List<SocialCircle> socialCircles = new ArrayList<>();
 
         List<Edge> searchedEdges = new ArrayList<>();
-        Set<Edge> edgeCircle = new HashSet<>();
+        List<Edge> edgeCircle = new ArrayList<>();
 
         for (Edge i : graph.getEdges().toArray()) {
             if (!searchedEdges.contains(i)) {
                 searchedEdges.add(i);
-                edgeCircle = new HashSet<>();
+                edgeCircle = new ArrayList<>();
                 edgeCircle.add(i);
-                for (Edge j : edgeCircle) {
-                    for (Edge k : graphModel.getUndirectedGraph().getEdges().toArray()) {
-                        if (!searchedEdges.contains(k) && (new EdgeSimilarity(graphModel.getUndirectedGraph(), j, k,node_profiles).getS(0.2) > similarityThreshold)) {
-                            edgeCircle.add(k);
+
+                for(int ite=0;ite<edgeCircle.size();ite++){
+                    Edge j = edgeCircle.get(ite);
+                    for (Edge k : getConnectedEdges(j,graph)) {
+                        EdgeSimilarity edgeSimilarity = new EdgeSimilarity(graphModel.getUndirectedGraph(), j, k, node_profiles);
+                        System.out.println("EC= "+edgeCircle);
+                        double sim = edgeSimilarity.getS(0.2);
+                        System.out.println(edgeSimilarity+" - "+sim);
+
+                        if (!searchedEdges.contains(k) && (sim > similarityThreshold)) {
+                            if (!edgeCircle.contains(k)) {
+                                edgeCircle.add(k);
+                            }
                             searchedEdges.add(k);
                         }
                     }
                 }
             }
             SocialCircle s = new SocialCircle();
+            System.out.println("& "+edgeCircle.size());
             //TODO fix this
             for (Edge ed : edgeCircle) {
                 s.addToCircle(ed.getSource());
                 s.addToCircle(ed.getTarget());
             }
-            s.setVector(circlefeatureAbstarct(edgeCircle));
+            s.setVector(circlefeatureAbstarct(edgeCircle, node_profiles));
             socialCircles.add(s);
 
             System.out.println(socialCircles);
@@ -187,9 +201,25 @@ public class AgoTagCircle {
         return sum / similaritySet.size();
     }
 
-    public  FeatureVector circlefeatureAbstarct(Set<Edge> es){
-//TODO
-        return null;
+    public FeatureVector circlefeatureAbstarct(List<Edge> es, Map<Node, List<ProfileFeature>> node_profiles) {
+        List<ProfileFeature> sumVector = new ArrayList<>();
+        List<ProfileFeature> features = node_profiles.get(es.get(0).getSource());
+        for (int i = 0; i < features.size(); i++) {
+            sumVector.add(new ProfileFeature(features.get(i).getFeatureValue(), 0.0));
+        }
+
+
+        for (Edge e : es) {
+            List<ProfileFeature> edgeFeatureVector = new ArrayList<>();
+            List<ProfileFeature> node1Profile = node_profiles.get(e.getSource());
+            List<ProfileFeature> node2Profile = node_profiles.get(e.getTarget());
+            List<ProfileFeature> intF = intersectProfiles(node1Profile, node2Profile);
+            sumVector = addProfiles(sumVector, intF);
+
+        }
+
+        sumVector = normalize(sumVector, es.size());
+        return constractFeatureVector(sumVector);
     }
 
     public boolean checkEdgeExistence(Edge[] edges, Object id_s, Object id_t) {
@@ -199,5 +229,78 @@ public class AgoTagCircle {
             }
         }
         return false;
+    }
+
+
+    public List<ProfileFeature> intersectProfiles(List<ProfileFeature> node1Profile,
+                                                  List<ProfileFeature> node2Profile) {
+        List<ProfileFeature> p = new ArrayList<>();
+        for (int i = 0; i < node1Profile.size(); i++) {
+            if (node1Profile.get(i).getData().equals(node2Profile.get(i).getData()) && (node2Profile.get(i).getData().equals(1))) {
+                p.add(new ProfileFeature(node1Profile.get(i).getFeatureValue(), node1Profile.get(i).getData()));
+
+            } else {
+                p.add(new ProfileFeature(node1Profile.get(i).getFeatureValue(), 0.0));
+            }
+        }
+        return p;
+    }
+
+
+    public List<ProfileFeature> addProfiles(List<ProfileFeature> node1Profile,
+                                            List<ProfileFeature> node2Profile) {
+        List<ProfileFeature> p = new ArrayList<>();
+        for (int i = 0; i < node1Profile.size(); i++) {
+            p.add(new ProfileFeature(node1Profile.get(i).getFeatureValue(), node1Profile.get(i).getData() + node2Profile.get(i).getData()));
+
+
+        }
+        return p;
+    }
+
+
+    public List<ProfileFeature> normalize(List<ProfileFeature> node1Profile,
+                                          int norm) {
+        List<ProfileFeature> p = new ArrayList<>();
+        for (int i = 0; i < node1Profile.size(); i++) {
+            p.add(new ProfileFeature(node1Profile.get(i).getFeatureValue(), node1Profile.get(i).getData() / norm));
+
+
+        }
+        return p;
+    }
+
+    public FeatureVector constractFeatureVector(List<ProfileFeature> profileFeatures) {
+        double threshold = 0.3;
+        FeatureVector fV = new FeatureVector();
+        for (ProfileFeature pf : profileFeatures) {
+            if (pf.getData() > threshold) {
+                fV.addFeature(pf.getFeatureValue().getValue(),pf.getData());
+            }
+        }
+        return fV;
+    }
+
+    public  List<Edge> getConnectedEdges( Edge e, Graph graph){
+        List<Edge> toRet = new ArrayList<>();
+        Node n1 = e.getTarget();
+        Node n2 = e.getSource();
+
+        Edge[] n1Edges = graph.getEdges(n1).toArray();
+
+        Edge[] n2Edges = graph.getEdges(n1).toArray();
+        for (Edge ej:n1Edges){
+            if (!toRet.contains(ej)&&!e.equals(ej)){
+                toRet.add(ej);
+            }
+        }
+
+        for (Edge ej:n2Edges){
+            if (!toRet.contains(ej)&&!e.equals(ej)){
+                toRet.add(ej);
+            }
+        }
+
+        return toRet;
     }
 }

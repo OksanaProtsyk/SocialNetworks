@@ -27,8 +27,8 @@ import java.util.Set;
  * Created by okpr0814 on 5/15/2017.
  */
 public class AgoCircleDiscovery {
-    public static String FILE_PATH_IN = "src/main/webapp/resources/static/assets/data/graph_out.gexf";
-    public static String FILE_PATH_OUT = "src/main/webapp/resources/static/assets/data/graph_com.gexf";
+    public static String FILE_PATH_IN = "src/main/webapp/resources/static/assets/data/graph_my.gexf";
+    public static String FILE_PATH_OUT = "src/main/webapp/resources/static/assets/data/graph_test_com.gexf";
 
     public void script() {
         //Init a project - and therefore a workspace
@@ -69,11 +69,8 @@ public class AgoCircleDiscovery {
         int count = 0;
 
         for(Node n:graphpp.getNodes()){
-            Object o = n.getAttribute("19");
-            if (o!=null) {
-                set.add(o.toString());
-                count++;
-            }
+           System.out.println(graphpp.getNeighbors(n).toCollection().size()+"_______"+graphpp.getNeighbors(n));
+           n.setSize(graphpp.getNeighbors(n).toArray().length/10);
         }
 
         System.out.println(set);

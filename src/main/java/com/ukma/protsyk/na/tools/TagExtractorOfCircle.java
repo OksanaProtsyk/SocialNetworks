@@ -67,41 +67,41 @@ public class TagExtractorOfCircle {
             switch (f.getType()) {
                 case OCCUPATION:
                     if (f.getValue().equals(n.getAttribute(ATTR_OCCUPATION))) {
-                        userProfile.add(new ProfileFeature(f, 1));
+                        userProfile.add(new ProfileFeature(f, 1.0));
                     } else {
-                        userProfile.add(new ProfileFeature(f, 0));
+                        userProfile.add(new ProfileFeature(f, 0.0));
 
                     }
                     break;
                 case HOME_TOWN:
                     if (f.getValue().equals(n.getAttribute(ATTR_HOME_TOWN))) {
-                        userProfile.add(new ProfileFeature(f, 1));
+                        userProfile.add(new ProfileFeature(f, 1.0));
                     } else {
-                        userProfile.add(new ProfileFeature(f, 0));
+                        userProfile.add(new ProfileFeature(f, 0.0));
 
                     }
                     break;
                 case CITY:
                     if (f.getValue().equals(n.getAttribute(ATTR_CITY))) {
-                        userProfile.add(new ProfileFeature(f, 1));
+                        userProfile.add(new ProfileFeature(f, 1.0));
                     } else {
-                        userProfile.add(new ProfileFeature(f, 0));
+                        userProfile.add(new ProfileFeature(f, 0.0));
 
                     }
                     break;
                 case UNIVERSITY:
                     if (f.getValue().equals(n.getAttribute(ATTR_UNIVERSITY))) {
-                        userProfile.add(new ProfileFeature(f, 1));
+                        userProfile.add(new ProfileFeature(f, 1.0));
                     } else {
-                        userProfile.add(new ProfileFeature(f, 0));
+                        userProfile.add(new ProfileFeature(f, 0.0));
 
                     }
                     break;
                 case SCHOOL:
                     if (f.getValue().equals(n.getAttribute(ATTR_SCHOOL))) {
-                        userProfile.add(new ProfileFeature(f, 1));
+                        userProfile.add(new ProfileFeature(f, 1.0));
                     } else {
-                        userProfile.add(new ProfileFeature(f, 0));
+                        userProfile.add(new ProfileFeature(f, 0.0));
 
                     }
                     break;

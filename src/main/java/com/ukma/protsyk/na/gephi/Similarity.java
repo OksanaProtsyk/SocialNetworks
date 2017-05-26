@@ -55,7 +55,7 @@ public class Similarity {
             a_s += (double) sourceFeature.get(i).getData() * (double) sourceFeature.get(i).getData();
             b_s += (double) targetFeature.get(i).getData() * (double) targetFeature.get(i).getData();
         }
-        System.out.println("*" + ab);
+       // System.out.println("*" + ab);
         if ((a_s != 0) && (b_s != 0)) {
             return ab / (Math.sqrt(a_s) * Math.sqrt(b_s));
         } else {

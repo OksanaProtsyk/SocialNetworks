@@ -31,6 +31,8 @@
 <script src="/resources/static/assets/js/plugins/sigma.parsers.gexf.min.js"></script>
 
 <script>
+
+    sigma.settings.labelThreshold=20;
     // Add a method to the graph model that returns an
     // object with every neighbors of a node inside:
     sigma.classes.graph.addMethod('neighbors', function(nodeId) {
@@ -45,7 +47,7 @@
     });
 
     sigma.parsers.gexf(
-            '/resources/static/assets/data/graph_com.gexf',
+            '/resources/static/assets/data/graph_my_out.gexf',
             {
                 container: 'sigma-container'
             },

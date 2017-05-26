@@ -57,7 +57,13 @@ public class EdgeSimilarity {
     }
 
     public double getLPS() {
+        if (source.equals(target)) {
+            return 0;
+        }
 
+        if(node1 == null){
+            return 0;
+        }
         double ab = 0;
         double a_s = 0;
         double b_s = 0;
@@ -65,9 +71,9 @@ public class EdgeSimilarity {
         List<ProfileFeature> targetFeature = nodeProfiles.get(node2);
 
         for (int i = 0; i < sourceFeature.size(); i++) {
-            ab += (double) sourceFeature.get(i).getData() * (double) targetFeature.get(i).getData();
-            a_s += (double) sourceFeature.get(i).getData() * (double) sourceFeature.get(i).getData();
-            b_s += (double) targetFeature.get(i).getData() * (double) targetFeature.get(i).getData();
+            ab += sourceFeature.get(i).getData() *  targetFeature.get(i).getData();
+            a_s += sourceFeature.get(i).getData() * sourceFeature.get(i).getData();
+            b_s +=  targetFeature.get(i).getData() *  targetFeature.get(i).getData();
         }
         if ((a_s != 0) && (b_s != 0)) {
             return ab / (Math.sqrt(a_s) * Math.sqrt(b_s));
@@ -86,8 +92,8 @@ public class EdgeSimilarity {
         Node oneS = source.getSource();
         Node oneT = source.getTarget();
 
-        Node secondS = source.getSource();
-        Node secondT = source.getTarget();
+        Node secondS = target.getSource();
+        Node secondT = target.getTarget();
         if (oneS.equals(secondS)) {
             node1 = oneT;
             node2 = secondT;
@@ -107,6 +113,18 @@ public class EdgeSimilarity {
         }
 
 
+    }
+
+    @Override
+    public String toString() {
+        return "EdgeSimilarity{" +
+                "node1=" + node1 +
+                ", node2=" + node2 +
+                ", source=" + source +
+                ", target=" + target +
+                ", LTS=" + getLTS() +
+                ", LPS=" + getLPS() +
+                '}';
     }
 }
 
