@@ -46,16 +46,26 @@
         return neighbors;
     });
 
-    sigma.classes.graph.addMethod('sameColor', function(nodeId) {
+    sigma.classes.graph.addMethod('sameColor', function(node,t) {
         var k,
-            neighbors = {};
+            neighbors = {},
 
-        for (k in this.nodes) {
-            if (k.color ==node.color){
-                neighbors.add(k.nodeId)
+            index = t.nodesIndex;
+
+        console.log("I am here",t);
+
+      /*  for (var j = 0; j < t.length; j++){
+            console.log(t[j].originalColor);
+            if(t[j].originalColor == node.originalColor){
+                neighbors[j] = t[j];
+                console.log("IN circle");
+
             }
-        }
+        }*/
 
+
+
+        console.log(neighbors);
         return neighbors;
     });
 
@@ -67,6 +77,8 @@
             function(s) {
                 // We first need to save the original colors of our
                 // nodes and edges, like this:
+                var t = s.graph.nodes();
+
                 s.graph.nodes().forEach(function(n) {
                     n.originalColor = n.color;
                 });

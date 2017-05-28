@@ -249,7 +249,6 @@ public class AgoTagCircle {
             List<ProfileFeature> node1Profile = node_profiles.get(e.getSource());
             List<ProfileFeature> node2Profile = node_profiles.get(e.getTarget());
             List<ProfileFeature> intF = intersectProfiles(node1Profile, node2Profile);
-            // System.out.println("intF"+intF);
             sumVector = addProfiles(sumVector, intF);
 
         }
