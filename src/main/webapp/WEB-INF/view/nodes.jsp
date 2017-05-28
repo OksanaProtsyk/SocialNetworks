@@ -46,6 +46,19 @@
         return neighbors;
     });
 
+    sigma.classes.graph.addMethod('sameColor', function(nodeId) {
+        var k,
+            neighbors = {};
+
+        for (k in this.nodes) {
+            if (k.color ==node.color){
+                neighbors.add(k.nodeId)
+            }
+        }
+
+        return neighbors;
+    });
+
     sigma.parsers.gexf(
             '/resources/static/assets/data/graph_my_out.gexf',
             {

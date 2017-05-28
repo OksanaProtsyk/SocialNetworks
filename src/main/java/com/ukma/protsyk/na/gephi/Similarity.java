@@ -27,13 +27,13 @@ public class Similarity {
     }
 
     public double getVTS() {
-        NodeIterable iNei = graph.getNeighbors(source);
-        NodeIterable jNei = graph.getNeighbors(target);
+        Node[] iNei = graph.getNeighbors(source).toArray();
+        Node[] jNei = graph.getNeighbors(target).toArray();
 
 
         int countInter = 0;
         for (Node i : iNei) {
-            for (Node j : iNei) {
+            for (Node j : jNei){
                 if (i.getId().equals(j.getId())) {
                     countInter++;
                 }

@@ -32,4 +32,8 @@ public class SocialCircle {
     public void setVector(FeatureVector vector) {
         this.vector = vector;
     }
+
+    public Set<Node> getCircle() {
+        return circle;
+    }
 }

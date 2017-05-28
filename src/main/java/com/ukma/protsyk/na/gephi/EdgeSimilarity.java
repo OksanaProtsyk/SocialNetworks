@@ -40,13 +40,13 @@ public class EdgeSimilarity {
         }
 
 
-        NodeIterable iNei = graph.getNeighbors(node1);
-        NodeIterable jNei = graph.getNeighbors(node2);
+        Node[] iNei = graph.getNeighbors(node1).toArray();
+        Node[] jNei = graph.getNeighbors(node2).toArray();
 
 
         int countInter = 0;
         for (Node i : iNei) {
-            for (Node j : iNei) {
+            for (Node j : jNei) {
                 if (i.getId().equals(j.getId())) {
                     countInter++;
                 }
