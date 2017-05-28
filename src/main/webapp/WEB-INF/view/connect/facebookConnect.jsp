@@ -43,7 +43,7 @@ friends_work_history" />
     <div class="formInfo">
         <p>You aren't connected to Facebook yet. Click the button to connect Spring Social Showcase with your Facebook account.</p>
     </div>
-    <p><button type="submit"><img src="/resources/static/social/facebook/connect_light_medium_short.gif"/></button></p>
+    <p><button type="submit"><img src="resources/static/social/facebook/connect_light_medium_short.gif"/></button></p>
     <label for="postToWall"><input id="postToWall" type="checkbox" name="postToWall" /> Tell your friends about Spring Social Showcase on your Facebook wall</label>
 </form>
 </body>
