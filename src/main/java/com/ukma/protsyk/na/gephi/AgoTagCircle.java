@@ -159,7 +159,7 @@ public class AgoTagCircle {
                     for (Edge k : getConnectedEdges(j, graph)) {
                         EdgeSimilarity edgeSimilarity = new EdgeSimilarity(graphModel.getUndirectedGraph(), j, k, node_profiles);
                         // System.out.println("EC= "+edgeCircle);
-                        double sim = edgeSimilarity.getS(0.1);
+                        double sim = edgeSimilarity.getS(0.8);
                         //System.out.println(edgeSimilarity+" - "+sim);
 
                         if (!searchedEdges.contains(k) && (sim > similarityThreshold)) {
@@ -186,9 +186,9 @@ public class AgoTagCircle {
 
         }
         System.out.println(socialCircles);
-        // for (SocialCircle s : socialCircles) {
-        //  System.out.println(s.getCircle().size());
-        //  }
+        for (SocialCircle s : socialCircles) {
+          System.out.println(s.getCircle().size());
+          }
 
         for (Edge e : graphModel.getUndirectedGraph().getEdges().toArray()) {
             if ("0".equals(e.getAttribute("del"))) {

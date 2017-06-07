@@ -83,7 +83,7 @@ public class EdgeSimilarity {
     }
 
     public double getS(double alpha) {
-        return alpha * getLPS() + (1 - alpha) * getLTS();
+        return  alpha * getLTS()+(1 - alpha) * getLPS();
 
     }
 
