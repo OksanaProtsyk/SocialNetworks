@@ -52,16 +52,16 @@
 
             index = t.nodesIndex;
 
-        console.log("I am here",t);
+        console.log("I am here",node.originalColor);
 
-      /*  for (var j = 0; j < t.length; j++){
+       for (var j = 0; j < t.length; j++){
             console.log(t[j].originalColor);
             if(t[j].originalColor == node.originalColor){
-                neighbors[j] = t[j];
-                console.log("IN circle");
+                neighbors[t[j].id] = t[j];
+                console.log("IN circle:+" ,t[j].id);
 
             }
-        }*/
+        }
 
 
 
@@ -94,7 +94,8 @@
                 // edges that have both extremities colored.
                 s.bind('clickNode', function(e) {
                     var nodeId = e.data.node.id,
-                            toKeep = s.graph.neighbors(nodeId);
+                            //toKeep = s.graph.neighbors(nodeId);
+                            toKeep = s.graph.sameColor(e.data.node,t);
                     toKeep[nodeId] = e.data.node;
 
                     s.graph.nodes().forEach(function(n) {
